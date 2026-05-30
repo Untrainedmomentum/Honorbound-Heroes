@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Involved — HonorBound Heroes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0B1F3A;
+    --navy-mid: #162d50;
+    --red: #B22234;
+    --red-dark: #8f1a28;
+    --white: #FFFFFF;
+    --off-white: #EEF1F7;
+    --text-muted: #7a8fa8;
+    --border: rgba(255,255,255,0.1);
+    --input-bg: rgba(255,255,255,0.05);
+    --input-border: rgba(255,255,255,0.15);
+    --input-focus: rgba(178,34,52,0.5);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--navy);
+    color: var(--off-white);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  /* ── NAV ── */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 3rem;
+    background: rgba(11,31,58,0.98);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .nav-back {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-back:hover { color: var(--white); }
+
+  /* ── PAGE HEADER ── */
+  .page-header {
+    padding: 4rem 3rem 3rem;
+    border-bottom: 1px solid var(--border);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .page-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 0.8rem;
+  }
+
+  .page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .page-header p {
+    color: var(--text-muted);
+    max-width: 560px;
+    font-weight: 300;
+    line-height: 1.75;
+  }
+
+  /* ── TAB NAV ── */
+  .tab-nav {
+    display: flex;
+    gap: 0;
+    max-width: 900px;
+    margin: 2.5rem auto 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .tab-btn {
+    background: none;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .tab-btn:hover { color: var(--off-white); }
+  .tab-btn.active { color: var(--white); border-bottom-color: var(--red); }
+
+  /* ── FORM PANELS ── */
+  .forms-area {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+
+  .form-panel { display: none; }
+  .form-panel.active { display: block; }
+
+  .form-intro {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .form-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-intro p {
+    color: var(--text-muted);
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
+
+  /* ── FORM ELEMENTS ── */
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .form-group.full { grid-column: 1 / -1; }
+
+  label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  label .optional {
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    color: rgba(122,143,168,0.6);
+    font-size: 0.75rem;
+    margin-left: 0.3rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+    color: var(--white);
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    width: 100%;
+    transition: border-color 0.2s, background 0.2s;
+    outline: none;
+    appearance: none;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--red);
+    background: rgba(255,255,255,0.08);
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: rgba(122,143,168,0.5);
+  }
+
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a8fa8' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+  }
+
+  select option { background: var(--navy-mid); color: var(--white); }
+
+  textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
+
+  /* ── CHECKBOXES ── */
+  .check-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .check-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .check-item {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    cursor: pointer;
+  }
+
+  .check-item input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    border-radius: 2px;
+    border: 1px solid var(--input-border);
+    background: var(--input-bg);
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    position: relative;
+  }
+
+  .check-item input[type="checkbox"]:checked {
+    background: var(--red);
+    border-color: var(--red);
+  }
+
+  .check-item input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px; top: 1px;
+    width: 5px; height: 9px;
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+  }
+
+  .check-item span {
+    font-size: 0.9rem;
+    color: var(--off-white);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  /* ── SUBMIT ── */
+  .form-footer {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .form-note {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-weight: 300;
+    max-width: 420px;
+    line-height: 1.5;
+  }
+
+  .btn-submit {
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 0.9rem 2.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-submit:hover { background: var(--red-dark); transform: translateY(-1px); }
+
+  /* ── SUCCESS STATE ── */
+  .success-msg {
+    display: none;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .success-msg .check-circle {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: rgba(178,34,52,0.15);
+    border: 2px solid var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 1.5rem;
+  }
+
+  .success-msg h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .success-msg p {
+    color: var(--text-muted);
+    font-weight: 300;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ── FLAG STRIPE ── */
+  .flag-bar {
+    height: 4px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, var(--white) 33%, var(--white) 66%, #0A3577 66%, #0A3577 100%);
+  }
+
+  @media (max-width: 680px) {
+    nav { padding: 1rem 1.5rem; }
+    .page-header { padding: 2.5rem 1.5rem 2rem; }
+    .tab-btn { padding: 0.75rem 1.25rem; font-size: 0.8rem; }
+    .forms-area { padding: 2rem 1.5rem; }
+    .form-grid { grid-template-columns: 1fr; }
+    .form-group.full { grid-column: 1; }
+  }
+</style>
+</head>
+<body>
+
+<div class="flag-bar"></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">HonorBound Heroes</a>
+  <a href="index.html" class="nav-back">← Back to Site</a>
+</nav>
+
+<div class="page-header">
+  <div class="page-label">Join the Mission</div>
+  <h1>Get Involved</h1>
+  <p>Whether you want to volunteer your time or help lead this organization as a board member, we want to hear from you. Fill out the form below and we'll be in touch.</p>
+</div>
+
+<div class="tab-nav">
+  <button class="tab-btn active" onclick="switchTab('volunteer')">Volunteer</button>
+  <button class="tab-btn" onclick="switchTab('board')">Join the Board</button>
+</div>
+
+<div class="forms-area">
+
+  <!-- ── VOLUNTEER FORM ── -->
+  <div class="form-panel active" id="panel-volunteer">
+    <div class="form-intro">
+      <h2>Volunteer with Us</h2>
+      <p>We need people on the ground — at care kit drives, outreach events, and behind the scenes. All backgrounds and skill levels are welcome. Tell us a little about yourself and how you'd like to help.</p>
+    </div>
+
+    <form name="volunteer" netlify netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="volunteer">
+      <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label for="v-name">Full Name</label>
+          <input type="text" id="v-name" name="name" placeholder="Jane Smith" required>
+        </div>
+
+        <div class="form-group">
+          <label for="v-email">Email Address</label>
+          <input type="email" id="v-email" name="email" placeholder="jane@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="v-phone">Phone <span class="optional">(optional)</span></label>
+          <input type="tel" id="v-phone" name="phone" placeholder="(555) 000-0000">
+        </div>
+
+        <div class="form-group">
+          <label for="v-availability">General Availability</label>
+          <select id="v-availability" name="availability" required>
+            <option value="" disabled selected>Select availability</option>
+            <option>Weekdays</option>
+            <option>Weekends</option>
+            <option>Evenings</option>
+            <option>Flexible</option>
+          </select>
+        </div>
+
+        <div class="form-group full">
+          <span class="check-label">Areas You'd Like to Help With <span class="optional" style="text-transform:none; letter-spacing:0; font-size:0.75rem;">(check all that apply)</span></span>
+          <div class="check-grid">
+            <label class="check-item"><input type="checkbox" name="interest" value="Care kit assembly & distribution"><span>Care kit drives</span></label>
+            <label class="check-item"><input type="checkbox" name="interest" value="Outreach events"><span>Outreach events</span></label>
+            <label class="check-item"><input type="checkbox" name="interest" value="Social media & marketing"><span>Social media & marketing</span></label>
+            <label class="check-item"><input type="checkbox" name="interest" value="Fundraising support"><span>Fundraising</span></label>
+            <label class="check-item"><input type="checkbox" name="interest" value="Administrative support"><span>Administrative support</span></label>
+            <label class="check-item"><input type="checkbox" name="interest" value="Photography or videography"><span>Photography / video</span></label>
+            <label class="check-item"><input type="checkbox" name="interest" value="Wherever needed most"><span>Wherever needed most</span></label>
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label for="v-message">Anything else you'd like us to know? <span class="optional">(optional)</span></label>
+          <textarea id="v-message" name="message" placeholder="Tell us about yourself, any relevant experience, or how you heard about us..."></textarea>
+        </div>
+
+      </div>
+
+      <div class="form-footer">
+        <p class="form-note">We'll reach out within a few days. No commitment required at this stage — we just want to connect.</p>
+        <button type="submit" class="btn-submit">Submit Interest</button>
+      </div>
+    </form>
+
+    <div class="success-msg" id="success-volunteer">
+      <div class="check-circle">✓</div>
+      <h3>Thank you for stepping up.</h3>
+      <p>We received your volunteer interest and will be in touch within a few days.</p>
+    </div>
+  </div>
+
+  <!-- ── BOARD FORM ── -->
+  <div class="form-panel" id="panel-board">
+    <div class="form-intro">
+      <h2>Join the Board of Directors</h2>
+      <p>We're building a founding board of people who are serious about doing real work in real communities. This is a hands-on role — we're looking for quarterly meeting attendance, active committee participation, and genuine investment in the mission.</p>
+    </div>
+
+    <form name="board" netlify netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="board">
+      <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label for="b-name">Full Name</label>
+          <input type="text" id="b-name" name="name" placeholder="Jane Smith" required>
+        </div>
+
+        <div class="form-group">
+          <label for="b-email">Email Address</label>
+          <input type="email" id="b-email" name="email" placeholder="jane@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="b-phone">Phone <span class="optional">(optional)</span></label>
+          <input type="tel" id="b-phone" name="phone" placeholder="(555) 000-0000">
+        </div>
+
+        <div class="form-group">
+          <label for="b-role">Current Role / Title <span class="optional">(optional)</span></label>
+          <input type="text" id="b-role" name="current_role" placeholder="e.g. Attorney, CPA, Retired USMC">
+        </div>
+
+        <div class="form-group full">
+          <label for="b-employer">Organization or Employer <span class="optional">(optional)</span></label>
+          <input type="text" id="b-employer" name="employer" placeholder="Where do you currently work or have you worked?">
+        </div>
+
+        <div class="form-group full">
+          <span class="check-label">Areas of Expertise <span class="optional" style="text-transform:none; letter-spacing:0; font-size:0.75rem;">(check all that apply)</span></span>
+          <div class="check-grid">
+            <label class="check-item"><input type="checkbox" name="expertise" value="Nonprofit governance"><span>Nonprofit governance</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Legal & compliance"><span>Legal & compliance</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Finance & accounting"><span>Finance & accounting</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Fundraising & grants"><span>Fundraising & grants</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Marketing & communications"><span>Marketing & communications</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Veterans services"><span>Veterans services</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Healthcare"><span>Healthcare</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Community organizing"><span>Community organizing</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Military / veteran background"><span>Military / veteran background</span></label>
+          </div>
+        </div>
+
+        <div class="form-group full">
+          <label for="b-linkedin">LinkedIn Profile <span class="optional">(optional)</span></label>
+          <input type="text" id="b-linkedin" name="linkedin" placeholder="linkedin.com/in/yourname">
+        </div>
+
+        <div class="form-group full">
+          <label for="b-why">Why do you want to join the board?</label>
+          <textarea id="b-why" name="why" placeholder="Tell us what draws you to this mission and what you'd bring to the table..." required></textarea>
+        </div>
+
+        <div class="form-group full">
+          <label for="b-commitment">Any questions or constraints we should know about? <span class="optional">(optional)</span></label>
+          <textarea id="b-commitment" name="notes" placeholder="Time availability, conflicts of interest, questions about the role..." style="min-height: 80px;"></textarea>
+        </div>
+
+      </div>
+
+      <div class="form-footer">
+        <p class="form-note">Board applications are reviewed by John McAllister. We'll follow up with a conversation before any commitment is made.</p>
+        <button type="submit" class="btn-submit">Submit Application</button>
+      </div>
+    </form>
+
+    <div class="success-msg" id="success-board">
+      <div class="check-circle">✓</div>
+      <h3>Application received.</h3>
+      <p>John will personally review your submission and reach out to schedule a conversation.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function switchTab(tab) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.form-panel').forEach(p => p.classList.remove('active'));
+    event.target.classList.add('active');
+    document.getElementById('panel-' + tab).classList.add('active');
+  }
+
+  document.querySelectorAll('form[netlify]').forEach(form => {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      fetch('/', { method: 'POST', body: data })
+        .then(() => {
+          form.style.display = 'none';
+          const name = form.getAttribute('name');
+          document.getElementById('success-' + name).style.display = 'block';
+        })
+        .catch(() => {
+          alert('Something went wrong. Please try again or email us directly.');
+        });
+    });
+  });
+</script>
+
+</body>
+</html>
