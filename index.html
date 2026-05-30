@@ -9,641 +9,106 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
-    --navy: #0B1F3A;
-    --navy-mid: #162d50;
-    --red: #B22234;
-    --red-dark: #8f1a28;
-    --white: #FFFFFF;
-    --off-white: #EEF1F7;
-    --text-muted: #7a8fa8;
-    --gold: #C9921A;
-    --border: rgba(255,255,255,0.1);
+    --navy: #0B1F3A; --navy-mid: #162d50; --red: #B22234; --red-dark: #8f1a28;
+    --white: #FFFFFF; --off-white: #EEF1F7; --text-muted: #7a8fa8;
+    --gold: #C9921A; --border: rgba(255,255,255,0.1);
   }
-
   html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'Barlow', sans-serif;
-    background: var(--navy);
-    color: var(--off-white);
-    line-height: 1.6;
-    font-size: 17px;
-    overflow-x: hidden;
-  }
-
-  /* ── NAV ── */
-  nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.1rem 3rem;
-    background: rgba(11,31,58,0.92);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-
-  .nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: -0.01em;
-    text-decoration: none;
-  }
-
+  body { font-family: 'Barlow', sans-serif; background: var(--navy); color: var(--off-white); line-height: 1.6; font-size: 17px; overflow-x: hidden; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 3rem; background: rgba(11,31,58,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--white); letter-spacing: -0.01em; text-decoration: none; }
   .nav-logo span { color: var(--off-white); }
-
   .nav-links { display: flex; gap: 2.5rem; list-style: none; }
   .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
   .nav-links a:hover { color: var(--white); }
-
-  .nav-cta {
-    background: var(--red);
-    color: var(--white);
-    padding: 0.55rem 1.5rem;
-    border-radius: 2px;
-    font-weight: 600;
-    font-size: 0.88rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.2s;
-  }
+  .nav-cta { background: var(--red); color: var(--white); padding: 0.55rem 1.5rem; border-radius: 2px; font-weight: 600; font-size: 0.88rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
   .nav-cta:hover { background: var(--red-dark); }
-
-  /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 8rem 3rem 5rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(178,34,52,0.07) 0%, transparent 70%);
-  }
-
-  .hero-stripe {
-    position: absolute;
-    top: 0; bottom: 0;
-    right: 0;
-    width: 3px;
-    background: linear-gradient(180deg, var(--red) 0%, rgba(255,255,255,0.3) 60%, transparent 100%);
-    opacity: 0.5;
-  }
-
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.18);
-    color: var(--off-white);
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 0.4rem 1rem;
-    border-radius: 2px;
-    margin-bottom: 2rem;
-    width: fit-content;
-  }
-
-  .hero-badge::before {
-    content: '';
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--red);
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(0.8); }
-  }
-
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(3rem, 7vw, 6.5rem);
-    font-weight: 900;
-    line-height: 1.0;
-    max-width: 800px;
-    position: relative;
-    z-index: 1;
-  }
-
-  .hero h1 em {
-    font-style: normal;
-    color: var(--red);
-  }
-
-  .hero h1 .line-accent {
-    display: block;
-    color: var(--red);
-    font-size: 0.55em;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    margin-bottom: 0.3rem;
-    font-family: 'Barlow Condensed', sans-serif;
-    text-transform: uppercase;
-  }
-
-  .hero-sub {
-    max-width: 560px;
-    color: #b0bfcf;
-    font-size: 1.15rem;
-    font-weight: 300;
-    line-height: 1.75;
-    margin: 1.8rem 0 2.5rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .hero-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 1;
-  }
-
-  .btn-primary {
-    background: var(--red);
-    color: var(--white);
-    padding: 1rem 2.2rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 2px;
-    transition: background 0.2s, transform 0.15s;
-    display: inline-block;
-  }
+  .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 8rem 3rem 5rem; position: relative; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(178,34,52,0.07) 0%, transparent 70%); }
+  .hero-stripe { position: absolute; top: 0; bottom: 0; right: 0; width: 3px; background: linear-gradient(180deg, var(--red) 0%, rgba(255,255,255,0.3) 60%, transparent 100%); opacity: 0.5; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); color: var(--off-white); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.4rem 1rem; border-radius: 2px; margin-bottom: 2rem; width: fit-content; }
+  .hero-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--red); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.8); } }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 7vw, 6.5rem); font-weight: 900; line-height: 1.0; max-width: 800px; position: relative; z-index: 1; }
+  .hero h1 em { font-style: normal; color: var(--red); }
+  .hero h1 .line-accent { display: block; color: var(--red); font-size: 0.55em; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 0.3rem; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; }
+  .hero-sub { max-width: 560px; color: #b0bfcf; font-size: 1.15rem; font-weight: 300; line-height: 1.75; margin: 1.8rem 0 2.5rem; position: relative; z-index: 1; }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; }
+  .btn-primary { background: var(--red); color: var(--white); padding: 1rem 2.2rem; font-size: 0.95rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: background 0.2s, transform 0.15s; display: inline-block; }
   .btn-primary:hover { background: #c01e30; transform: translateY(-1px); }
-
-  .btn-secondary {
-    background: transparent;
-    color: var(--off-white);
-    padding: 1rem 2.2rem;
-    font-size: 0.95rem;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 2px;
-    border: 1px solid rgba(245,240,232,0.3);
-    transition: border-color 0.2s, color 0.2s;
-    display: inline-block;
-  }
+  .btn-secondary { background: transparent; color: var(--off-white); padding: 1rem 2.2rem; font-size: 0.95rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; border: 1px solid rgba(245,240,232,0.3); transition: border-color 0.2s, color 0.2s; display: inline-block; }
   .btn-secondary:hover { border-color: var(--white); color: var(--white); }
-
-  .hero-stat-row {
-    display: flex;
-    gap: 3rem;
-    margin-top: 4rem;
-    padding-top: 2.5rem;
-    border-top: 1px solid rgba(255,255,255,0.08);
-    position: relative;
-    z-index: 1;
-  }
-
-  .hero-stat .num {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1;
-  }
-
-  .hero-stat .label {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-top: 0.3rem;
-    font-weight: 500;
-  }
-
-  /* ── DIVIDER ── */
-  .flag-divider {
-    height: 5px;
-    background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, var(--white) 33%, var(--white) 66%, #0A3577 66%, #0A3577 100%);
-  }
-
-  /* ── SECTION BASE ── */
+  .hero-stat-row { display: flex; gap: 3rem; margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.08); position: relative; z-index: 1; }
+  .hero-stat .num { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 700; color: var(--white); line-height: 1; }
+  .hero-stat .label { font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.3rem; font-weight: 500; }
+  .flag-divider { height: 5px; background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, var(--white) 33%, var(--white) 66%, #0A3577 66%, #0A3577 100%); }
   section { padding: 6rem 3rem; }
-
-  .section-label {
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--red);
-    margin-bottom: 1rem;
-  }
-
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 700;
-    line-height: 1.1;
-    max-width: 700px;
-    margin-bottom: 1.5rem;
-  }
-
-  .section-body {
-    max-width: 620px;
-    color: #b0bfcf;
-    font-weight: 300;
-    line-height: 1.8;
-  }
-
-  /* ── PROBLEM SECTION ── */
+  .section-label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.1; max-width: 700px; margin-bottom: 1.5rem; }
+  .section-body { max-width: 620px; color: #b0bfcf; font-weight: 300; line-height: 1.8; }
   .problem { background: var(--navy-mid); }
-
-  .problem-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .problem-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-
-  .stat-card {
-    background: rgba(11,31,58,0.8);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 1.8rem;
-  }
-
-  .stat-card .big {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1;
-  }
-
+  .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; max-width: 1100px; margin: 0 auto; }
+  .problem-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .stat-card { background: rgba(11,31,58,0.8); border: 1px solid var(--border); border-radius: 4px; padding: 1.8rem; }
+  .stat-card .big { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 700; color: var(--white); line-height: 1; }
   .stat-card .big.red { color: var(--red); }
   .stat-card .big.white { color: var(--off-white); }
-
-  .stat-card p {
-    font-size: 0.88rem;
-    color: var(--text-muted);
-    margin-top: 0.5rem;
-    line-height: 1.5;
-    font-weight: 400;
-  }
-
-  /* ── MISSION ── */
+  .stat-card p { font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem; line-height: 1.5; font-weight: 400; }
   .mission { max-width: 1100px; margin: 0 auto; }
-
-  .mission-layout {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 5rem;
-    align-items: start;
-  }
-
-  .mission-aside {
-    border-left: 3px solid var(--red);
-    padding-left: 1.5rem;
-  }
-
-  .mission-aside blockquote {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.4;
-    color: var(--off-white);
-    margin-bottom: 1rem;
-  }
-
-  .mission-aside cite {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-style: normal;
-    font-weight: 500;
-  }
-
-  /* ── HOW WE HELP ── */
+  .mission-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; align-items: start; }
+  .mission-aside { border-left: 3px solid var(--red); padding-left: 1.5rem; }
+  .mission-aside blockquote { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; line-height: 1.4; color: var(--off-white); margin-bottom: 1rem; }
+  .mission-aside cite { font-size: 0.85rem; color: var(--text-muted); font-style: normal; font-weight: 500; }
   .how { background: var(--navy-mid); }
   .how-inner { max-width: 1100px; margin: 0 auto; }
-
-  .tiers {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 3rem;
-  }
-
-  .tier-card {
-    background: var(--navy);
-    border-radius: 4px;
-    padding: 2rem;
-    border: 1px solid rgba(255,255,255,0.07);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .tier-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-  }
-
+  .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .tier-card { background: var(--navy); border-radius: 4px; padding: 2rem; border: 1px solid rgba(255,255,255,0.07); position: relative; overflow: hidden; }
+  .tier-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
   .tier-card.now::before { background: var(--red); }
   .tier-card.soon::before { background: #4a7fc1; }
   .tier-card.mission::before { background: rgba(255,255,255,0.4); }
-
-  .tier-tag {
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    padding: 0.3rem 0.7rem;
-    border-radius: 2px;
-    display: inline-block;
-  }
-
+  .tier-tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; padding: 0.3rem 0.7rem; border-radius: 2px; display: inline-block; }
   .now .tier-tag { background: rgba(178,34,52,0.15); color: #e06070; }
   .soon .tier-tag { background: rgba(74,127,193,0.15); color: #7aaee8; }
   .mission .tier-tag { background: rgba(255,255,255,0.08); color: var(--off-white); }
-
-  .tier-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.35rem;
-    margin-bottom: 0.8rem;
-    line-height: 1.2;
-  }
-
-  .tier-card p {
-    font-size: 0.92rem;
-    color: #8a9bb5;
-    line-height: 1.7;
-  }
-
-  .tier-card ul {
-    list-style: none;
-    margin-top: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .tier-card li {
-    font-size: 0.88rem;
-    color: #b0bfcf;
-    padding-left: 1.2rem;
-    position: relative;
-  }
-
-  .tier-card li::before {
-    content: '—';
-    position: absolute;
-    left: 0;
-    color: var(--red);
-    font-weight: 600;
-  }
-
-  /* ── JOHN'S STORY ── */
+  .tier-card h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; margin-bottom: 0.8rem; line-height: 1.2; }
+  .tier-card p { font-size: 0.92rem; color: #8a9bb5; line-height: 1.7; }
+  .tier-card ul { list-style: none; margin-top: 1.2rem; display: flex; flex-direction: column; gap: 0.5rem; }
+  .tier-card li { font-size: 0.88rem; color: #b0bfcf; padding-left: 1.2rem; position: relative; }
+  .tier-card li::before { content: '—'; position: absolute; left: 0; color: var(--red); font-weight: 600; }
   .story { max-width: 1100px; margin: 0 auto; }
-
-  .story-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 5rem;
-    align-items: start;
-  }
-
-  .pull-quote {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--off-white);
-    border-left: 4px solid var(--red);
-    padding-left: 1.5rem;
-    margin: 2rem 0;
-    line-height: 1.3;
-  }
-
-  .story-body p {
-    color: #b0bfcf;
-    font-weight: 300;
-    line-height: 1.85;
-    margin-bottom: 1.2rem;
-  }
-
-  .john-card {
-    background: var(--navy-mid);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 2rem;
-    text-align: center;
-  }
-
-  .john-avatar {
-    width: 80px; height: 80px;
-    border-radius: 50%;
-    background: rgba(74,127,193,0.15);
-    border: 2px solid rgba(255,255,255,0.25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--white);
-    margin: 0 auto 1rem;
-  }
-
-  .john-card h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--white);
-    margin-bottom: 0.25rem;
-  }
-
-  .john-card .role {
-    font-size: 0.82rem;
-    color: var(--red);
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-
-  .john-card p {
-    font-size: 0.88rem;
-    color: #8a9bb5;
-    line-height: 1.6;
-  }
-
-  /* ── GET INVOLVED ── */
+  .story-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 5rem; align-items: start; }
+  .pull-quote { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--off-white); border-left: 4px solid var(--red); padding-left: 1.5rem; margin: 2rem 0; line-height: 1.3; }
+  .story-body p { color: #b0bfcf; font-weight: 300; line-height: 1.85; margin-bottom: 1.2rem; }
+  .john-card { background: var(--navy-mid); border: 1px solid var(--border); border-radius: 4px; padding: 2rem; text-align: center; }
+  .john-avatar { width: 80px; height: 80px; border-radius: 50%; background: rgba(74,127,193,0.15); border: 2px solid rgba(255,255,255,0.25); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--white); margin: 0 auto 1rem; }
+  .john-card h4 { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 0.25rem; }
+  .john-card .role { font-size: 0.82rem; color: var(--red); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem; }
+  .john-card p { font-size: 0.88rem; color: #8a9bb5; line-height: 1.6; }
   .involved { background: var(--navy-mid); }
   .involved-inner { max-width: 1100px; margin: 0 auto; }
-
-  .involve-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 3rem;
-  }
-
-  .involve-card {
-    background: var(--navy);
-    border-radius: 4px;
-    padding: 2.2rem 2rem;
-    border: 1px solid rgba(255,255,255,0.07);
-    text-decoration: none;
-    color: inherit;
-    transition: border-color 0.2s, transform 0.15s;
-    display: block;
-  }
-
+  .involve-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .involve-card { background: var(--navy); border-radius: 4px; padding: 2.2rem 2rem; border: 1px solid rgba(255,255,255,0.07); text-decoration: none; color: inherit; transition: border-color 0.2s, transform 0.15s; display: block; }
   .involve-card:hover { border-color: rgba(255,255,255,0.25); transform: translateY(-2px); }
-
-  .involve-icon {
-    width: 48px; height: 48px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin-bottom: 1.2rem;
-  }
-
+  .involve-icon { width: 48px; height: 48px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.2rem; }
   .involve-card:nth-child(1) .involve-icon { background: rgba(178,34,52,0.15); }
   .involve-card:nth-child(2) .involve-icon { background: rgba(255,255,255,0.07); }
   .involve-card:nth-child(3) .involve-icon { background: rgba(74,127,193,0.15); }
-
-  .involve-card h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-bottom: 0.7rem;
-  }
-
-  .involve-card p {
-    font-size: 0.9rem;
-    color: #8a9bb5;
-    line-height: 1.65;
-  }
-
-  .involve-card .cta-arrow {
-    display: inline-block;
-    margin-top: 1.2rem;
-    font-size: 0.82rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--red);
-  }
-
-  /* ── BOARD SECTION ── */
+  .involve-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 0.7rem; }
+  .involve-card p { font-size: 0.9rem; color: #8a9bb5; line-height: 1.65; }
+  .involve-card .cta-arrow { display: inline-block; margin-top: 1.2rem; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); }
   .board { max-width: 1100px; margin: 0 auto; }
-
-  .board-cta-box {
-    background: rgba(178,34,52,0.08);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 4px;
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 3rem;
-    align-items: center;
-    margin-top: 3rem;
-  }
-
-  .board-cta-box h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .board-cta-box p {
-    color: #8a9bb5;
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
-
-  /* ── FOOTER ── */
-  footer {
-    background: rgba(0,0,0,0.4);
-    border-top: 1px solid rgba(255,255,255,0.06);
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 3rem;
-    max-width: 100%;
-  }
-
-  .footer-brand .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 0.8rem;
-    display: block;
-  }
-
-  .footer-brand p {
-    font-size: 0.88rem;
-    color: #6a7a8a;
-    line-height: 1.7;
-    max-width: 280px;
-  }
-
-  .footer-col h4 {
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    margin-bottom: 1rem;
-  }
-
-  .footer-col a {
-    display: block;
-    color: #6a7a8a;
-    text-decoration: none;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    transition: color 0.2s;
-  }
-
+  .board-cta-box { background: rgba(178,34,52,0.08); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 3rem; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; margin-top: 3rem; }
+  .board-cta-box h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 0.8rem; }
+  .board-cta-box p { color: #8a9bb5; font-size: 0.95rem; line-height: 1.7; }
+  footer { background: rgba(0,0,0,0.4); border-top: 1px solid rgba(255,255,255,0.06); padding: 3rem; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; }
+  .footer-brand .logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--white); margin-bottom: 0.8rem; display: block; }
+  .footer-brand p { font-size: 0.88rem; color: #6a7a8a; line-height: 1.7; max-width: 280px; }
+  .footer-col h4 { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem; }
+  .footer-col a { display: block; color: #6a7a8a; text-decoration: none; font-size: 0.9rem; margin-bottom: 0.5rem; transition: color 0.2s; }
   .footer-col a:hover { color: var(--white); }
-
-  .footer-bottom {
-    text-align: center;
-    padding: 1.2rem 3rem;
-    font-size: 0.8rem;
-    color: #4a5a6a;
-    border-top: 1px solid rgba(255,255,255,0.04);
-  }
-
+  .footer-bottom { text-align: center; padding: 1.2rem 3rem; font-size: 0.8rem; color: #4a5a6a; border-top: 1px solid rgba(255,255,255,0.04); }
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
@@ -659,7 +124,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">HonorBound <span>Heroes</span></a>
   <ul class="nav-links">
@@ -667,32 +131,24 @@
     <li><a href="#how">Our Work</a></li>
     <li><a href="#story">Our Story</a></li>
     <li><a href="get-involved.html">Get Involved</a></li>
-    <li><a href="get-involved.html#board">Join the Board</a></li>
+    <li><a href="get-involved.html">Join the Board</a></li>
   </ul>
   <a href="https://givebutter.com/HonorBound" class="nav-cta" target="_blank">Donate Now</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-stripe"></div>
-
   <div class="hero-badge">Michigan Nonprofit · Est. 2024 · Rebuilding in 2026</div>
-
   <h1>
     <span class="line-accent">No Veteran Left Behind</span>
     They kept <em>their</em><br>oath. Now <em>we</em><br>keep ours.
   </h1>
-
-  <p class="hero-sub">
-    HonorBound Heroes provides immediate relief and long-term support to homeless veterans in our communities — because those who served deserve more than survival.
-  </p>
-
+  <p class="hero-sub">HonorBound Heroes provides immediate relief and long-term support to homeless veterans in our communities — because those who served deserve more than survival.</p>
   <div class="hero-actions">
     <a href="https://givebutter.com/HonorBound" class="btn-primary" target="_blank">Make a Difference Today</a>
     <a href="#mission" class="btn-secondary">Learn Our Mission</a>
   </div>
-
   <div class="hero-stat-row">
     <div class="hero-stat">
       <div class="num">32,882</div>
@@ -711,15 +167,12 @@
 
 <div class="flag-divider"></div>
 
-<!-- PROBLEM -->
 <section class="problem" id="mission">
   <div class="problem-grid">
     <div>
       <div class="section-label">The Crisis</div>
       <h2 class="section-title">These Americans fought for us. We have to fight for them.</h2>
-      <p class="section-body">
-        Veterans represent roughly 8% of the adult homeless population, yet they are among the most underserved. Many came home changed — by trauma, injury, and a system that wasn't ready for them. HonorBound Heroes exists to close that gap in our own backyard and beyond.
-      </p>
+      <p class="section-body">Many veterans came home changed — by trauma, injury, and a system that wasn't ready for them. Thousands find themselves without stable housing, cut off from support. HonorBound Heroes exists to close that gap in our own backyard and beyond.</p>
     </div>
     <div class="problem-stats">
       <div class="stat-card">
@@ -742,7 +195,6 @@
   </div>
 </section>
 
-<!-- MISSION -->
 <section>
   <div class="mission" id="about">
     <div class="mission-layout">
@@ -753,24 +205,18 @@
       <div>
         <div class="section-label">Our Mission</div>
         <h2 class="section-title">Compassion that goes beyond a cardboard sign</h2>
-        <p class="section-body" style="margin-bottom: 1rem;">
-          At HonorBound Heroes, we believe that dignity is not a privilege — it's something every veteran earned the moment they raised their right hand. Our mission is to honor their service by meeting them where they are, with real help and a real path forward.
-        </p>
-        <p class="section-body">
-          We don't just write checks. We show up. From emergency care kits to job placement support to long-term housing advocacy, we walk beside veterans at every step of their journey home.
-        </p>
+        <p class="section-body" style="margin-bottom: 1rem;">At HonorBound Heroes, we believe that dignity is not a privilege — it's something every veteran earned the moment they raised their right hand. Our mission is to honor their service by meeting them where they are, with real help and a real path forward.</p>
+        <p class="section-body">We start with what we can do today and build toward what needs to happen long-term. Every care kit, every conversation, every connection moves someone closer to stability.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW WE HELP -->
 <section class="how" id="how">
   <div class="how-inner">
     <div class="section-label">Our Approach</div>
     <h2 class="section-title">Three tiers of impact, one unbreakable commitment</h2>
     <p class="section-body">We believe in winning battles you can actually fight — starting with immediate relief, building toward lasting change. Every step forward matters.</p>
-
     <div class="tiers">
       <div class="tier-card now">
         <div class="tier-tag">Our First Campaign</div>
@@ -782,18 +228,16 @@
           <li>Distributed directly to veterans in need</li>
         </ul>
       </div>
-
       <div class="tier-card soon">
         <div class="tier-tag">Growing With Purpose</div>
         <h3>Connecting Veterans to Resources</h3>
-        <p>We believe in meeting veterans where they are and pointing them toward the help that exists — benefits, services, and community support they may not know how to reach.</p>
+        <p>Meeting veterans where they are and pointing them toward the help that exists — benefits, services, and community support they may not know how to reach.</p>
         <ul>
           <li>VA benefits awareness</li>
           <li>Local resource referrals</li>
           <li>Community outreach events</li>
         </ul>
       </div>
-
       <div class="tier-card mission">
         <div class="tier-tag">What We're Working Toward</div>
         <h3>A Home for Every Veteran</h3>
@@ -808,23 +252,17 @@
   </div>
 </section>
 
-<!-- JOHN'S STORY -->
 <section id="story">
   <div class="story">
     <div class="story-grid">
       <div class="story-body">
         <div class="section-label">Our Story</div>
         <h2 class="section-title">Started with heart. Rebuilding with purpose.</h2>
-
         <p>HonorBound Heroes began the way most great ideas do — with a group of people who looked at a problem in their community and refused to look away. They saw veterans sleeping in parking lots, under bridges, invisible in the richest country in the world, and they said: not here, not on our watch.</p>
-
         <div class="pull-quote">One man standing is still a movement waiting to happen.</div>
-
         <p>The organization hit hard times. Founders moved on. Momentum stalled. But the mission never changed, and neither did John McAllister — the one constant through it all. John has carried HonorBound Heroes on his back through the difficult stretch, refusing to let it become just another good idea that faded away.</p>
-
         <p>Now we're rebuilding — with new leadership, a clearer strategy, and a community ready to step up. The best chapter of this organization is the one we haven't written yet. And we'd like you to help write it.</p>
       </div>
-
       <div>
         <div class="john-card">
           <div class="john-avatar">JM</div>
@@ -832,7 +270,6 @@
           <div class="role">Executive Director</div>
           <p>John has kept the HonorBound flame alive through difficult times. His commitment to veterans' dignity and his refusal to quit are the foundation this organization is rebuilding on.</p>
         </div>
-
         <div style="background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem; margin-top: 1.5rem;">
           <div class="section-label" style="margin-bottom: 0.5rem;">501(c)(3) Status</div>
           <p style="font-size: 0.88rem; color: #8a9bb5; line-height: 1.6;">HonorBound Heroes is a registered nonprofit. Your donations may be tax-deductible. See our <a href="https://www.honorboundheroes.com/501c3-non-profit" style="color: var(--red);" target="_blank">501(c)(3) documentation</a>.</p>
@@ -842,31 +279,27 @@
   </div>
 </section>
 
-<!-- GET INVOLVED -->
 <section class="involved" id="involved">
   <div class="involved-inner">
     <div class="section-label">Get Involved</div>
     <h2 class="section-title">There are more ways to help than you think</h2>
     <p class="section-body">Whether you have five dollars or five hours, your contribution matters. Here's how you can stand with veterans today.</p>
-
-
+    <div class="involve-cards">
       <a href="https://givebutter.com/HonorBound" class="involve-card" target="_blank">
         <div class="involve-icon">🎖</div>
         <h3>Donate</h3>
-        <p>Every dollar goes directly to veteran support — no bloated admin costs, no middlemen. Even $25 can cover an emergency care kit for a veteran in crisis.</p>
+        <p>Every dollar goes toward veteran support. Even $25 can cover a care kit for a veteran in need.</p>
         <div class="cta-arrow">Give Now →</div>
       </a>
-
       <a href="get-involved.html" class="involve-card">
         <div class="involve-icon">🤝</div>
-       <h3><a href="get-involved.html" style="color: inherit; text-decoration: none;">Volunteer</a></h3>
+        <h3>Volunteer</h3>
         <p>We need people on the ground — at care kit drives, outreach events, and behind the scenes. Skills of all kinds are welcome.</p>
         <div class="cta-arrow">Reach Out →</div>
       </a>
-
-      <a href="#board" class="involve-card">
+      <a href="get-involved.html" class="involve-card">
         <div class="involve-icon">🏛</div>
-      <h3><a href="get-involved.html" style="color: inherit; text-decoration: none;">Join the Board</a></h3>
+        <h3>Join the Board</h3>
         <p>We're actively building a board of directors. If you have experience in nonprofit management, law, finance, or community organizing, we want to hear from you.</p>
         <div class="cta-arrow">Learn More →</div>
       </a>
@@ -874,17 +307,15 @@
   </div>
 </section>
 
-<!-- BOARD RECRUITMENT -->
 <section id="board">
   <div class="board">
     <div class="section-label">Board of Directors</div>
     <h2 class="section-title">Help lead this mission</h2>
     <p class="section-body">HonorBound Heroes is actively recruiting a founding board of directors. This is a ground-floor opportunity to shape a veteran-serving organization that is serious about doing real work in real communities.</p>
-
     <div class="board-cta-box">
       <div>
         <h3>We're looking for board members who are ready to show up.</h3>
-        <p>We need individuals with backgrounds in: nonprofit governance, legal & compliance, finance & fundraising, community outreach, veterans' services, marketing, and healthcare. Commitment is quarterly meetings, active committee participation, and a genuine passion for the mission.</p>
+        <p>We need individuals with backgrounds in: nonprofit governance, legal &amp; compliance, finance &amp; fundraising, community outreach, veterans' services, marketing, and healthcare. Commitment is quarterly meetings, active committee participation, and a genuine passion for the mission.</p>
       </div>
       <div>
         <a href="get-involved.html" class="btn-primary" style="white-space: nowrap; display: inline-block;">Express Interest</a>
@@ -893,7 +324,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-brand">
     <span class="logo">HonorBound Heroes</span>
@@ -904,8 +334,8 @@
     <a href="#mission">Our Mission</a>
     <a href="#how">Our Work</a>
     <a href="#story">Our Story</a>
-    <a href="#involved">Get Involved</a>
-    <a href="#board">Join the Board</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="get-involved.html">Join the Board</a>
   </div>
   <div class="footer-col">
     <h4>Connect</h4>
@@ -913,11 +343,13 @@
     <a href="https://www.instagram.com/honorboundheroes/" target="_blank">Instagram</a>
     <a href="https://www.tiktok.com/@honorbound2024" target="_blank">TikTok</a>
     <a href="https://givebutter.com/HonorBound" target="_blank">Donate via GiveButter</a>
-    <a href="https://bonfire.com/honorbound" target="_blank">Shop & Support</a>
+    <a href="https://bonfire.com/honorbound" target="_blank">Shop &amp; Support</a>
   </div>
 </footer>
 <div class="footer-bottom">
-  © 2024–2026 HonorBound Heroes · 501(c)(3) Nonprofit Organization · All donations may be tax-deductible · <a href="https://www.honorboundheroes.com/terms" style="color: #4a5a6a;">Terms</a> · <a href="https://www.honorboundheroes.com/new-page" style="color: #4a5a6a;">Privacy</a>
+  &copy; 2024&ndash;2026 HonorBound Heroes &middot; 501(c)(3) Nonprofit Organization &middot; All donations may be tax-deductible &middot;
+  <a href="https://www.honorboundheroes.com/terms" style="color: #4a5a6a;">Terms</a> &middot;
+  <a href="https://www.honorboundheroes.com/new-page" style="color: #4a5a6a;">Privacy</a>
 </div>
 
 </body>
