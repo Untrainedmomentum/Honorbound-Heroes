@@ -116,7 +116,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.6rem 3rem;
+    padding: 0 3rem;
+    height: 68px;
     background: rgba(11,31,58,0.96);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -124,7 +125,7 @@
   }
 
   .nav-logo-wrap { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; flex-shrink: 0; }
-  .nav-logo-img { width: 52px; height: 52px; object-fit: contain; background: transparent; padding: 0; border-radius: 0; }
+  .nav-logo-img { width: 48px; height: 48px; object-fit: contain; background: transparent; }
   .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; color: var(--white); letter-spacing: -0.01em; line-height: 1.15; display: block; }
   .nav-logo-tagline { font-family: 'Barlow', sans-serif; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.08em; color: var(--text-muted); text-transform: uppercase; display: block; }
 
@@ -250,8 +251,10 @@
   .story-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 5rem; align-items: start; }
   .pull-quote { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--off-white); border-left: 4px solid var(--red); padding-left: 1.5rem; margin: 2rem 0; line-height: 1.3; }
   .story-body p { color: #b0bfcf; font-weight: 300; line-height: 1.85; margin-bottom: 1.2rem; }
-  .john-card { background: var(--navy-mid); border: 1px solid var(--border); border-radius: 4px; padding: 2rem; text-align: center; }
-  .john-logo { width: 80px; height: 80px; border-radius: 50%; object-fit: contain; background: #fff; margin: 0 auto 1rem; display: block; padding: 4px; border: 2px solid rgba(255,255,255,0.2); }
+  .john-card { background: var(--navy-mid); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; text-align: center; }
+  .john-logo { width: 100%; height: 240px; object-fit: cover; object-position: center top; display: block; }
+  .john-card-body { padding: 1.5rem 2rem 2rem; }
+  
   .john-card h4 { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 0.25rem; }
   .john-card .role { font-size: 0.82rem; color: var(--red); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem; }
   .john-card p { font-size: 0.88rem; color: #8a9bb5; line-height: 1.6; }
@@ -461,10 +464,12 @@
       </div>
       <div>
         <div class="john-card">
-          <img src="hbh_logo.jpg" alt="HonorBound Heroes" class="john-logo">
-          <h4>John McAllister</h4>
-          <div class="role">Executive Director</div>
-          <p>John has kept the HonorBound flame alive through difficult times. His commitment to veterans' dignity and his refusal to quit are the foundation this organization is rebuilding on.</p>
+          <img src="john-mcallister.jpg" alt="John McAllister, Executive Director of HonorBound Heroes" class="john-logo">
+          <div class="john-card-body">
+            <h4>John McAllister</h4>
+            <div class="role">Executive Director</div>
+            <p>John has kept the HonorBound flame alive through difficult times. His commitment to veterans' dignity and his refusal to quit are the foundation this organization is rebuilding on.</p>
+          </div>
         </div>
         <div style="background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:4px;padding:1.5rem;margin-top:1.5rem;">
           <div class="section-label" style="margin-bottom:0.5rem">501(c)(3) Status</div>
