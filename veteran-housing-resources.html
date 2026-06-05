@@ -144,6 +144,8 @@
 
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: inherit; text-decoration: none; }
+
   :root {
     --navy: #0B1F3A;
     --navy-mid: #162d50;
@@ -448,76 +450,8 @@
     
   }
 
-/* ── HAMBURGER MENU ── */
-.nav-hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 6px;
-  z-index: 110;
-  flex-shrink: 0;
-}
-.nav-hamburger span {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--white);
-  border-radius: 2px;
-  transition: transform 0.25s, opacity 0.25s;
-  transform-origin: center;
-}
-.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-hamburger.open span:nth-child(2) { opacity: 0; }
-.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-.mobile-nav {
-  display: none;
-  position: fixed;
-  top: 68px; left: 0; right: 0;
-  background: rgba(11,31,58,0.99);
-  backdrop-filter: blur(12px);
-  border-bottom: 2px solid var(--red);
-  z-index: 99;
-  padding: 1rem 0;
-  flex-direction: column;
-}
-.mobile-nav.open { display: flex; }
-.mobile-nav a {
-  color: var(--off-white);
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  padding: 0.85rem 2rem;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  transition: background 0.15s, color 0.15s;
-  display: block;
-}
-.mobile-nav a:hover { background: rgba(178,34,52,0.1); color: var(--white); }
-.mobile-nav a.mobile-active { color: var(--white); border-left: 3px solid var(--red); padding-left: calc(2rem - 3px); }
-.mobile-nav .mobile-section-label {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--red);
-  padding: 1rem 2rem 0.4rem;
-}
-.mobile-nav .mobile-donate {
-  margin: 1rem 2rem 0.5rem;
-  background: var(--red);
-  color: var(--white) !important;
-  text-align: center;
-  border-radius: 2px;
-  border-bottom: none !important;
-  padding: 0.85rem 2rem !important;
-}
-.mobile-nav .mobile-donate:hover { background: var(--red-dark) !important; }
+.flag-bar { height: 4px; background: linear-gradient(90deg, #B22234 0%, #B22234 33%, #fff 33%, #fff 66%, #0A3577 66%, #0A3577 100%); margin-top: 68px; }
 </style>
 </head>
 <body>
@@ -531,9 +465,8 @@
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html#mission">Mission</a></li>
-    <li><a href="index.html#how">Our Work</a></li>
-    <li><a href="index.html#story">Our Story</a></li>
+    <li><a href="index.html">Mission</a></li>
+    <li><a href="our-story.html">Our Story</a></li>
     <li class="nav-dropdown">
       <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
         Resources
@@ -541,7 +474,7 @@
       </button>
       <div class="nav-dropdown-menu" role="menu">
         <p class="dropdown-section-lbl">By Topic</p>
-        <a href="veteran-housing-resources.html" role="menuitem"><span class="ddot"></span>Housing &amp; Homelessness</a>
+        <a href="veteran-housing-resources.html" class="nav-active" role="menuitem"><span class="ddot"></span>Housing &amp; Homelessness</a>
         <a href="veteran-mental-health-resources.html" role="menuitem"><span class="ddot"></span>Mental Health</a>
       </div>
     </li>
@@ -553,14 +486,15 @@
   </button>
 </nav>
 <div class="mobile-nav" id="mobile-nav">
-  <a href="index.html#mission">Mission</a>
-  <a href="index.html#how">Our Work</a>
-  <a href="index.html#story">Our Story</a>
+  <a href="index.html">Mission</a>
+  <a href="our-story.html">Our Story</a>
   <p class="mobile-section-label">Resources</p>
   <a href="veteran-housing-resources.html" class="mobile-active" style="padding-left:2.75rem;font-size:0.82rem">Housing &amp; Homelessness</a>
+  <a href="veteran-mental-health-resources.html" style="padding-left:2.75rem;font-size:0.82rem">Mental Health</a>
   <a href="get-involved.html">Get Involved</a>
   <a href="https://givebutter.com/HonorBound" class="mobile-donate" target="_blank" rel="noopener">Donate Now</a>
 </div>
+
 
 <!-- URGENT -->
 <div class="urgent-strip" role="alert">
@@ -799,25 +733,23 @@
     <span class="pf-brand-name">HonorBound Heroes</span>
     <p>Serving homeless veterans with compassion, urgency, and respect. No one who served should face homelessness alone.</p>
   </div>
-  <div class="pf-col">
+    <div class="sf-col">
     <h4>Navigate</h4>
-    <a href="index.html#mission">Our Mission</a>
-    <a href="index.html#how">Our Work</a>
-    <a href="index.html#story">Our Story</a>
+    <a href="index.html">Mission</a>
+    <a href="our-story.html">Our Story</a>
     <a href="veteran-housing-resources.html">Housing Resources</a>
-    <a href="index.html#involved">Get Involved</a>
+    <a href="veteran-mental-health-resources.html">Mental Health Resources</a>
+    <a href="get-involved.html">Get Involved</a>
   </div>
-  <div class="pf-col">
-    <h4>Connect</h4>
-    <a href="https://www.facebook.com/honorbounheroes" target="_blank" rel="noopener">Facebook</a>
-    <a href="https://www.instagram.com/honorboundheroes/" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.tiktok.com/@honorbound2024" target="_blank" rel="noopener">TikTok</a>
-    <a href="https://givebutter.com/HonorBound" target="_blank" rel="noopener">Donate via GiveButter</a>
+  <div class="sf-col">
+    <h4>Legal</h4>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+    <a href="legal.html">Legal &amp; Disclosures</a>
   </div>
 </footer>
 <div class="footer-bottom">
-  © 2024–2026 HonorBound Heroes · 501(c)(3) Nonprofit · EIN 99-1356980 · Remus, MI (Mecosta County) ·
-  <a href="https://www.honorboundheroes.com/terms">Terms</a> · <a href="https://www.honorboundheroes.com/new-page">Privacy</a>
+  © 2024–2026 HonorBound Heroes · 501(c)(3) Nonprofit · EIN 99-1356980 · Remus, MI (Mecosta County) · <a href="privacy-policy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="legal.html">Legal</a><a href="https://www.honorboundheroes.com/terms">Terms</a> · <a href="https://www.honorboundheroes.com/new-page">Privacy</a>
 </div>
 
 <!-- MODAL -->
@@ -840,6 +772,7 @@
 </div>
 
 
+
 <script>
 (function() {
   var btn = document.getElementById('nav-hamburger');
@@ -854,7 +787,7 @@
     if (!menu.contains(e.target) && !btn.contains(e.target)) {
       menu.classList.remove('open');
       btn.classList.remove('open');
-      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-expanded','false');
     }
   });
 })();
