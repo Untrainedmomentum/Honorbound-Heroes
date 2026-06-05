@@ -3,72 +3,444 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HonorBound Heroes — No Veteran Left Behind</title>
+
+<!-- ═══════════════════════════════════════════════
+     PRIMARY SEO META
+════════════════════════════════════════════════ -->
+<title>HonorBound Heroes — No Veteran Left Behind | Veteran Nonprofit Remus, MI</title>
+<meta name="description" content="HonorBound Heroes is a 501(c)(3) nonprofit in Remus, Michigan dedicated to ending veteran homelessness through emergency care kits, resource connections, and long-term housing support. EIN: 99-1356980.">
+<meta name="keywords" content="veteran nonprofit Michigan, homeless veterans, veteran housing assistance, HonorBound Heroes, veteran care kits, veteran homelessness, Mecosta County veterans, 501c3 veteran charity, John McAllister veteran nonprofit, HUD-VASH veterans, SSVF veterans Michigan">
+<meta name="author" content="HonorBound Heroes">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.honorboundheroes.com/">
+
+<!-- ═══════════════════════════════════════════════
+     OPEN GRAPH (Facebook, LinkedIn)
+════════════════════════════════════════════════ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.honorboundheroes.com/">
+<meta property="og:title" content="HonorBound Heroes — No Veteran Left Behind">
+<meta property="og:description" content="501(c)(3) nonprofit ending veteran homelessness through immediate relief and long-term housing support. Remus, MI. EIN: 99-1356980.">
+<meta property="og:image" content="https://www.honorboundheroes.com/HBH_LOGO.jpg">
+<meta property="og:site_name" content="HonorBound Heroes">
+<meta property="og:locale" content="en_US">
+
+<!-- ═══════════════════════════════════════════════
+     TWITTER / X CARD
+════════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HonorBound Heroes — No Veteran Left Behind">
+<meta name="twitter:description" content="501(c)(3) nonprofit ending veteran homelessness through emergency care kits, resource connections, and housing advocacy. Remus, MI.">
+<meta name="twitter:image" content="https://www.honorboundheroes.com/HBH_LOGO.jpg">
+
+<!-- ═══════════════════════════════════════════════
+     SCHEMA.ORG — NonprofitOrganization
+════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "HonorBound Heroes",
+  "alternateName": "HonorBound Heroes 501c3",
+  "url": "https://www.honorboundheroes.com",
+  "logo": "https://www.honorboundheroes.com/HBH_LOGO.jpg",
+  "image": "https://www.honorboundheroes.com/HBH_LOGO.jpg",
+  "description": "HonorBound Heroes is a 501(c)(3) nonprofit organization dedicated to ending veteran homelessness through emergency care kits, job connections, and long-term housing support.",
+  "slogan": "No Veteran Left Behind",
+  "foundingDate": "2024",
+  "taxID": "99-1356980",
+  "nonprofitStatus": "Nonprofit501c3",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Remus",
+    "addressRegion": "MI",
+    "addressCountry": "US",
+    "addressCounty": "Mecosta County"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "knowsAbout": ["veteran homelessness", "homeless veteran housing", "veteran care kits", "HUD-VASH", "SSVF"],
+  "sameAs": [
+    "https://www.facebook.com/honorbounheroes",
+    "https://www.instagram.com/honorboundheroes/",
+    "https://www.tiktok.com/@honorbound2024"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "General Inquiry",
+    "email": "contact@honorboundheroes.org"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "John McAllister",
+    "jobTitle": "Executive Director"
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "GuideStar / Candid"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Veteran Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Emergency Care Kits"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Veteran Resource Navigation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Housing Advocacy"}}
+    ]
+  }
+}
+</script>
+
+<!-- BreadcrumbList schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem","position": 1,"name": "Home","item": "https://www.honorboundheroes.com/"},
+    {"@type": "ListItem","position": 2,"name": "Resources","item": "https://www.honorboundheroes.com/veteran-housing-resources.html"}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
   :root {
-    --navy: #0B1F3A; --navy-mid: #162d50; --red: #B22234; --red-dark: #8f1a28;
-    --white: #FFFFFF; --off-white: #EEF1F7; --text-muted: #7a8fa8;
-    --gold: #C9921A; --border: rgba(255,255,255,0.1);
+    --navy: #0B1F3A;
+    --navy-mid: #162d50;
+    --red: #B22234;
+    --red-dark: #8f1a28;
+    --white: #FFFFFF;
+    --off-white: #EEF1F7;
+    --text-muted: #7a8fa8;
+    --gold: #C9921A;
+    --border: rgba(255,255,255,0.1);
   }
+
   html { scroll-behavior: smooth; }
-  body { font-family: 'Barlow', sans-serif; background: var(--navy); color: var(--off-white); line-height: 1.6; font-size: 17px; overflow-x: hidden; }
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 3rem; background: rgba(11,31,58,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--white); letter-spacing: -0.01em; text-decoration: none; }
-  .nav-logo span { color: var(--off-white); }
-  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-  .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--navy);
+    color: var(--off-white);
+    line-height: 1.6;
+    font-size: 17px;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 3rem;
+    background: rgba(11,31,58,0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    gap: 1.5rem;
+  }
+
+  .nav-logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .nav-logo-img {
+    width: 44px; height: 44px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #fff;
+    padding: 2px;
+  }
+
+  .nav-logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+
+  .nav-logo-tagline {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .nav-links { display: flex; gap: 0; list-style: none; align-items: center; }
+  .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; padding: 0 0.9rem; }
   .nav-links a:hover { color: var(--white); }
-  .nav-cta { background: var(--red); color: var(--white); padding: 0.55rem 1.5rem; border-radius: 2px; font-weight: 600; font-size: 0.88rem; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
-  .nav-cta:hover { background: var(--red-dark); }
-  .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 8rem 3rem 5rem; position: relative; overflow: hidden; }
-  .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(178,34,52,0.07) 0%, transparent 70%); }
-  .hero-stripe { position: absolute; top: 0; bottom: 0; right: 0; width: 3px; background: linear-gradient(180deg, var(--red) 0%, rgba(255,255,255,0.3) 60%, transparent 100%); opacity: 0.5; }
-  .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); color: var(--off-white); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.4rem 1rem; border-radius: 2px; margin-bottom: 2rem; width: fit-content; }
-  .hero-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--red); animation: pulse 2s infinite; }
-  @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.8); } }
-  .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 7vw, 6.5rem); font-weight: 900; line-height: 1.0; max-width: 800px; position: relative; z-index: 1; }
+
+  /* Resources dropdown */
+  .nav-dropdown { position: relative; }
+  .nav-dropdown-trigger {
+    background: none; border: none; cursor: pointer;
+    color: var(--white); font-family: 'Barlow', sans-serif;
+    font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em;
+    text-transform: uppercase; padding: 0 0.9rem;
+    display: flex; align-items: center; gap: 4px;
+    border-bottom: 2px solid var(--red);
+    padding-bottom: 2px;
+  }
+  .nav-dropdown-trigger svg { width: 10px; height: 10px; transition: transform .2s; }
+  .nav-dropdown:hover .nav-dropdown-trigger svg { transform: rotate(180deg); }
+
+  .nav-dropdown-menu {
+    position: absolute; top: calc(100% + 8px); left: 0;
+    background: var(--navy-mid);
+    border: 1px solid rgba(178,34,52,0.3);
+    border-top: 2px solid var(--red);
+    min-width: 200px;
+    opacity: 0; visibility: hidden;
+    transform: translateY(-6px);
+    transition: all .18s ease;
+    z-index: 200;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+
+  .dropdown-section-lbl {
+    font-size: 10px; font-weight: 600; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--red);
+    padding: .55rem 1rem .25rem;
+  }
+  .nav-dropdown-menu a {
+    display: flex; align-items: center; gap: 8px;
+    padding: .5rem 1rem; font-size: 13px;
+    color: rgba(255,255,255,.75); text-decoration: none;
+    transition: background .12s, color .12s;
+    text-transform: none; letter-spacing: 0;
+  }
+  .nav-dropdown-menu a:hover { background: rgba(178,34,52,.12); color: #fff; }
+  .nav-dropdown-menu a .ddot { width: 5px; height: 5px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+  .nav-dropdown-menu a.disabled { opacity: .4; pointer-events: none; }
+  .nav-dropdown-menu .soon-tag { font-size: 9px; margin-left: auto; color: rgba(255,255,255,.3); }
+
+  .nav-cta {
+    background: var(--red);
+    color: var(--white) !important;
+    padding: 0.5rem 1.4rem !important;
+    border-radius: 2px;
+    font-weight: 600 !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { background: var(--red-dark) !important; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 3rem 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(178,34,52,0.07) 0%, transparent 70%);
+  }
+
+  .hero-stripe {
+    position: absolute;
+    top: 0; bottom: 0; right: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--red) 0%, rgba(255,255,255,0.3) 60%, transparent 100%);
+    opacity: 0.5;
+  }
+
+  /* Hero logo watermark */
+  .hero-logo-watermark {
+    position: absolute;
+    right: 4rem; top: 50%;
+    transform: translateY(-50%);
+    width: 340px; height: 340px;
+    object-fit: contain;
+    opacity: 0.06;
+    pointer-events: none;
+    filter: brightness(10);
+  }
+
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: var(--off-white);
+    font-size: 0.78rem; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 0.4rem 1rem; border-radius: 2px;
+    margin-bottom: 2rem; width: fit-content;
+  }
+  .hero-badge::before {
+    content: ''; width: 6px; height: 6px;
+    border-radius: 50%; background: var(--red);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-weight: 900; line-height: 1.0;
+    max-width: 800px; position: relative; z-index: 1;
+  }
   .hero h1 em { font-style: normal; color: var(--red); }
-  .hero h1 .line-accent { display: block; color: var(--red); font-size: 0.55em; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 0.3rem; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; }
-  .hero-sub { max-width: 560px; color: #b0bfcf; font-size: 1.15rem; font-weight: 300; line-height: 1.75; margin: 1.8rem 0 2.5rem; position: relative; z-index: 1; }
+  .hero h1 .line-accent {
+    display: block; color: var(--red);
+    font-size: 0.55em; font-weight: 700;
+    letter-spacing: 0.04em; margin-bottom: 0.3rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .hero-sub {
+    max-width: 560px; color: #b0bfcf;
+    font-size: 1.15rem; font-weight: 300;
+    line-height: 1.75; margin: 1.8rem 0 2.5rem;
+    position: relative; z-index: 1;
+  }
+
   .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; position: relative; z-index: 1; }
-  .btn-primary { background: var(--red); color: var(--white); padding: 1rem 2.2rem; font-size: 0.95rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: background 0.2s, transform 0.15s; display: inline-block; }
+
+  .btn-primary {
+    background: var(--red); color: var(--white);
+    padding: 1rem 2.2rem; font-size: 0.95rem; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    text-decoration: none; border-radius: 2px;
+    transition: background 0.2s, transform 0.15s; display: inline-block;
+  }
   .btn-primary:hover { background: #c01e30; transform: translateY(-1px); }
-  .btn-secondary { background: transparent; color: var(--off-white); padding: 1rem 2.2rem; font-size: 0.95rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; border-radius: 2px; border: 1px solid rgba(245,240,232,0.3); transition: border-color 0.2s, color 0.2s; display: inline-block; }
+
+  .btn-secondary {
+    background: transparent; color: var(--off-white);
+    padding: 1rem 2.2rem; font-size: 0.95rem; font-weight: 500;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    text-decoration: none; border-radius: 2px;
+    border: 1px solid rgba(245,240,232,0.3);
+    transition: border-color 0.2s, color 0.2s; display: inline-block;
+  }
   .btn-secondary:hover { border-color: var(--white); color: var(--white); }
-  .hero-stat-row { display: flex; gap: 3rem; margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.08); position: relative; z-index: 1; }
-  .hero-stat .num { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 700; color: var(--white); line-height: 1; }
-  .hero-stat .label { font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.3rem; font-weight: 500; }
-  .flag-divider { height: 5px; background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, var(--white) 33%, var(--white) 66%, #0A3577 66%, #0A3577 100%); }
+
+  .hero-stat-row {
+    display: flex; gap: 3rem;
+    margin-top: 4rem; padding-top: 2.5rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    position: relative; z-index: 1;
+  }
+  .hero-stat .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem; font-weight: 700;
+    color: var(--white); line-height: 1;
+  }
+  .hero-stat .label {
+    font-size: 0.82rem; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.08em;
+    margin-top: 0.3rem; font-weight: 500;
+  }
+
+  /* ── FLAG DIVIDER ── */
+  .flag-divider {
+    height: 5px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, var(--white) 33%, var(--white) 66%, #0A3577 66%, #0A3577 100%);
+  }
+
+  /* ── SECTIONS ── */
   section { padding: 6rem 3rem; }
-  .section-label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
-  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.1; max-width: 700px; margin-bottom: 1.5rem; }
-  .section-body { max-width: 620px; color: #b0bfcf; font-weight: 300; line-height: 1.8; }
+  .section-label {
+    font-size: 0.78rem; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); margin-bottom: 1rem;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700; line-height: 1.1;
+    max-width: 700px; margin-bottom: 1.5rem;
+  }
+  .section-body {
+    max-width: 620px; color: #b0bfcf;
+    font-weight: 300; line-height: 1.8;
+  }
+
+  /* ── PROBLEM ── */
   .problem { background: var(--navy-mid); }
-  .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; max-width: 1100px; margin: 0 auto; }
+  .problem-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 5rem; align-items: center;
+    max-width: 1100px; margin: 0 auto;
+  }
   .problem-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-  .stat-card { background: rgba(11,31,58,0.8); border: 1px solid var(--border); border-radius: 4px; padding: 1.8rem; }
-  .stat-card .big { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 700; color: var(--white); line-height: 1; }
+  .stat-card {
+    background: rgba(11,31,58,0.8);
+    border: 1px solid var(--border);
+    border-radius: 4px; padding: 1.8rem;
+  }
+  .stat-card .big {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem; font-weight: 700;
+    color: var(--white); line-height: 1;
+  }
   .stat-card .big.red { color: var(--red); }
-  .stat-card .big.white { color: var(--off-white); }
-  .stat-card p { font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem; line-height: 1.5; font-weight: 400; }
+  .stat-card p { font-size: 0.88rem; color: var(--text-muted); margin-top: 0.5rem; line-height: 1.5; }
+
+  /* ── MISSION ── */
   .mission { max-width: 1100px; margin: 0 auto; }
   .mission-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 5rem; align-items: start; }
   .mission-aside { border-left: 3px solid var(--red); padding-left: 1.5rem; }
-  .mission-aside blockquote { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; line-height: 1.4; color: var(--off-white); margin-bottom: 1rem; }
+  .mission-aside blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem; font-weight: 700;
+    line-height: 1.4; color: var(--off-white); margin-bottom: 1rem;
+  }
   .mission-aside cite { font-size: 0.85rem; color: var(--text-muted); font-style: normal; font-weight: 500; }
+
+  /* ── HOW WE HELP ── */
   .how { background: var(--navy-mid); }
   .how-inner { max-width: 1100px; margin: 0 auto; }
   .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
-  .tier-card { background: var(--navy); border-radius: 4px; padding: 2rem; border: 1px solid rgba(255,255,255,0.07); position: relative; overflow: hidden; }
+  .tier-card {
+    background: var(--navy); border-radius: 4px;
+    padding: 2rem; border: 1px solid rgba(255,255,255,0.07);
+    position: relative; overflow: hidden;
+  }
   .tier-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
   .tier-card.now::before { background: var(--red); }
   .tier-card.soon::before { background: #4a7fc1; }
   .tier-card.mission::before { background: rgba(255,255,255,0.4); }
-  .tier-tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1rem; padding: 0.3rem 0.7rem; border-radius: 2px; display: inline-block; }
+  .tier-tag {
+    font-size: 0.72rem; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    margin-bottom: 1rem; padding: 0.3rem 0.7rem;
+    border-radius: 2px; display: inline-block;
+  }
   .now .tier-tag { background: rgba(178,34,52,0.15); color: #e06070; }
   .soon .tier-tag { background: rgba(74,127,193,0.15); color: #7aaee8; }
   .mission .tier-tag { background: rgba(255,255,255,0.08); color: var(--off-white); }
@@ -77,19 +449,41 @@
   .tier-card ul { list-style: none; margin-top: 1.2rem; display: flex; flex-direction: column; gap: 0.5rem; }
   .tier-card li { font-size: 0.88rem; color: #b0bfcf; padding-left: 1.2rem; position: relative; }
   .tier-card li::before { content: '—'; position: absolute; left: 0; color: var(--red); font-weight: 600; }
+
+  /* ── STORY ── */
   .story { max-width: 1100px; margin: 0 auto; }
   .story-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 5rem; align-items: start; }
-  .pull-quote { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--off-white); border-left: 4px solid var(--red); padding-left: 1.5rem; margin: 2rem 0; line-height: 1.3; }
+  .pull-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem; font-weight: 700;
+    color: var(--off-white); border-left: 4px solid var(--red);
+    padding-left: 1.5rem; margin: 2rem 0; line-height: 1.3;
+  }
   .story-body p { color: #b0bfcf; font-weight: 300; line-height: 1.85; margin-bottom: 1.2rem; }
-  .john-card { background: var(--navy-mid); border: 1px solid var(--border); border-radius: 4px; padding: 2rem; text-align: center; }
-  .john-avatar { width: 80px; height: 80px; border-radius: 50%; background: rgba(74,127,193,0.15); border: 2px solid rgba(255,255,255,0.25); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--white); margin: 0 auto 1rem; }
+  .john-card {
+    background: var(--navy-mid); border: 1px solid var(--border);
+    border-radius: 4px; padding: 2rem; text-align: center;
+  }
+  .john-logo {
+    width: 80px; height: 80px; border-radius: 50%;
+    object-fit: contain; background: #fff;
+    margin: 0 auto 1rem; display: block; padding: 4px;
+    border: 2px solid rgba(255,255,255,0.2);
+  }
   .john-card h4 { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 0.25rem; }
   .john-card .role { font-size: 0.82rem; color: var(--red); font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1rem; }
   .john-card p { font-size: 0.88rem; color: #8a9bb5; line-height: 1.6; }
+
+  /* ── INVOLVED ── */
   .involved { background: var(--navy-mid); }
   .involved-inner { max-width: 1100px; margin: 0 auto; }
   .involve-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
-  .involve-card { background: var(--navy); border-radius: 4px; padding: 2.2rem 2rem; border: 1px solid rgba(255,255,255,0.07); text-decoration: none; color: inherit; transition: border-color 0.2s, transform 0.15s; display: block; }
+  .involve-card {
+    background: var(--navy); border-radius: 4px;
+    padding: 2.2rem 2rem; border: 1px solid rgba(255,255,255,0.07);
+    text-decoration: none; color: inherit;
+    transition: border-color 0.2s, transform 0.15s; display: block;
+  }
   .involve-card:hover { border-color: rgba(255,255,255,0.25); transform: translateY(-2px); }
   .involve-icon { width: 48px; height: 48px; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.2rem; }
   .involve-card:nth-child(1) .involve-icon { background: rgba(178,34,52,0.15); }
@@ -98,23 +492,52 @@
   .involve-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 0.7rem; }
   .involve-card p { font-size: 0.9rem; color: #8a9bb5; line-height: 1.65; }
   .involve-card .cta-arrow { display: inline-block; margin-top: 1.2rem; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); }
+
+  /* ── BOARD ── */
   .board { max-width: 1100px; margin: 0 auto; }
-  .board-cta-box { background: rgba(178,34,52,0.08); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 3rem; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; margin-top: 3rem; }
+  .board-cta-box {
+    background: rgba(178,34,52,0.08); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px; padding: 3rem;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 3rem; align-items: center; margin-top: 3rem;
+  }
   .board-cta-box h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 0.8rem; }
   .board-cta-box p { color: #8a9bb5; font-size: 0.95rem; line-height: 1.7; }
-  footer { background: rgba(0,0,0,0.4); border-top: 1px solid rgba(255,255,255,0.06); padding: 3rem; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; }
-  .footer-brand .logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--white); margin-bottom: 0.8rem; display: block; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: rgba(0,0,0,0.4);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+  }
+  .footer-brand-logo {
+    width: 64px; height: 64px;
+    object-fit: contain; background: #fff;
+    border-radius: 50%; padding: 3px;
+    margin-bottom: 1rem; display: block;
+  }
+  .footer-brand .logo-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem; font-weight: 700;
+    color: var(--white); margin-bottom: 0.6rem; display: block;
+  }
   .footer-brand p { font-size: 0.88rem; color: #6a7a8a; line-height: 1.7; max-width: 280px; }
   .footer-col h4 { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 1rem; }
   .footer-col a { display: block; color: #6a7a8a; text-decoration: none; font-size: 0.9rem; margin-bottom: 0.5rem; transition: color 0.2s; }
   .footer-col a:hover { color: var(--white); }
   .footer-bottom { text-align: center; padding: 1.2rem 3rem; font-size: 0.8rem; color: #4a5a6a; border-top: 1px solid rgba(255,255,255,0.04); }
+  .footer-bottom a { color: #4a5a6a; }
+
   @media (max-width: 768px) {
-    nav { padding: 1rem 1.5rem; }
+    nav { padding: 0.6rem 1.2rem; }
     .nav-links { display: none; }
     section { padding: 4rem 1.5rem; }
     .hero { padding: 7rem 1.5rem 4rem; }
     .hero-stat-row { flex-wrap: wrap; gap: 2rem; }
+    .hero-logo-watermark { display: none; }
     .problem-grid, .mission-layout, .story-grid { grid-template-columns: 1fr; gap: 3rem; }
     .tiers, .involve-cards { grid-template-columns: 1fr; }
     .board-cta-box { grid-template-columns: 1fr; }
@@ -124,31 +547,59 @@
 </head>
 <body>
 
-<nav>
-  <a href="#" class="nav-logo">HonorBound <span>Heroes</span></a>
+<!-- NAV -->
+<nav aria-label="Main navigation">
+  <a href="/" class="nav-logo-wrap" aria-label="HonorBound Heroes home">
+    <img src="HBH_LOGO.jpg" alt="HonorBound Heroes Logo" class="nav-logo-img">
+    <div>
+      <span class="nav-logo-text">HonorBound Heroes</span>
+      <span class="nav-logo-tagline">Where compassion meets commitment</span>
+    </div>
+  </a>
+
   <ul class="nav-links">
     <li><a href="#mission">Mission</a></li>
     <li><a href="#how">Our Work</a></li>
     <li><a href="#story">Our Story</a></li>
-    <li><a href="get-involved.html">Get Involved</a></li>
-    <li><a href="get-involved.html">Join the Board</a></li>
+
+    <li class="nav-dropdown">
+      <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+        Resources
+        <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="1,3 5,7 9,3"/></svg>
+      </button>
+      <div class="nav-dropdown-menu" role="menu">
+        <p class="dropdown-section-lbl">By Topic</p>
+        <a href="veteran-housing-resources.html" role="menuitem"><span class="ddot"></span>Housing &amp; Homelessness</a>
+      </div>
+    </li>
+
+    <li><a href="#involved">Get Involved</a></li>
+    <li><a href="#board">Join the Board</a></li>
   </ul>
-  <a href="https://givebutter.com/HonorBound" class="nav-cta" target="_blank">Donate Now</a>
+
+  <a href="https://givebutter.com/HonorBound" class="nav-cta" target="_blank" rel="noopener">Donate Now</a>
 </nav>
 
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-stripe"></div>
+<!-- HERO -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-stripe" aria-hidden="true"></div>
+  <img src="HBH_LOGO.jpg" alt="" class="hero-logo-watermark" aria-hidden="true">
+
   <div class="hero-badge">Michigan Nonprofit · Est. 2024 · Rebuilding in 2026</div>
+
   <h1>
     <span class="line-accent">No Veteran Left Behind</span>
     They kept <em>their</em><br>oath. Now <em>we</em><br>keep ours.
   </h1>
+
   <p class="hero-sub">HonorBound Heroes provides immediate relief and long-term support to homeless veterans in our communities — because those who served deserve more than survival.</p>
+
   <div class="hero-actions">
-    <a href="https://givebutter.com/HonorBound" class="btn-primary" target="_blank">Make a Difference Today</a>
+    <a href="https://givebutter.com/HonorBound" class="btn-primary" target="_blank" rel="noopener">Make a Difference Today</a>
     <a href="#mission" class="btn-secondary">Learn Our Mission</a>
   </div>
+
   <div class="hero-stat-row">
     <div class="hero-stat">
       <div class="num">32,882</div>
@@ -165,14 +616,15 @@
   </div>
 </section>
 
-<div class="flag-divider"></div>
+<div class="flag-divider" aria-hidden="true"></div>
 
-<section class="problem" id="mission">
+<!-- PROBLEM / MISSION -->
+<section class="problem" id="mission" aria-labelledby="crisis-heading">
   <div class="problem-grid">
     <div>
       <div class="section-label">The Crisis</div>
-      <h2 class="section-title">These Americans fought for us. We have to fight for them.</h2>
-      <p class="section-body">Many veterans came home changed — by trauma, injury, and a system that wasn't ready for them. Thousands find themselves without stable housing, cut off from support. HonorBound Heroes exists to close that gap in our own backyard and beyond.</p>
+      <h2 class="section-title" id="crisis-heading">These Americans fought for us. We have to fight for them.</h2>
+      <p class="section-body">Veterans represent roughly 8% of the adult homeless population, yet they are among the most underserved. Many came home changed — by trauma, injury, and a system that wasn't ready for them. HonorBound Heroes exists to close that gap in our own backyard and beyond.</p>
     </div>
     <div class="problem-stats">
       <div class="stat-card">
@@ -184,7 +636,7 @@
         <p>of those were completely unsheltered — living in cars, parks, sidewalks, and abandoned buildings</p>
       </div>
       <div class="stat-card">
-        <div class="big white">19,031</div>
+        <div class="big">19,031</div>
         <p>were in sheltered settings — emergency shelters, transitional housing, or supportive programs</p>
       </div>
       <div class="stat-card">
@@ -195,8 +647,9 @@
   </div>
 </section>
 
-<section>
-  <div class="mission" id="about">
+<!-- MISSION BODY -->
+<section aria-labelledby="mission-heading">
+  <div class="mission">
     <div class="mission-layout">
       <div class="mission-aside">
         <blockquote>"We refuse to let their sacrifice go unnoticed or unaided."</blockquote>
@@ -204,18 +657,19 @@
       </div>
       <div>
         <div class="section-label">Our Mission</div>
-        <h2 class="section-title">Compassion that goes beyond a cardboard sign</h2>
-        <p class="section-body" style="margin-bottom: 1rem;">At HonorBound Heroes, we believe that dignity is not a privilege — it's something every veteran earned the moment they raised their right hand. Our mission is to honor their service by meeting them where they are, with real help and a real path forward.</p>
-        <p class="section-body">We start with what we can do today and build toward what needs to happen long-term. Every care kit, every conversation, every connection moves someone closer to stability.</p>
+        <h2 class="section-title" id="mission-heading">Compassion that goes beyond a cardboard sign</h2>
+        <p class="section-body" style="margin-bottom:1rem">At HonorBound Heroes, we believe that dignity is not a privilege — it's something every veteran earned the moment they raised their right hand. Our mission is to honor their service by meeting them where they are, with real help and a real path forward.</p>
+        <p class="section-body">We don't just write checks. We show up. From emergency care kits to job placement support to long-term housing advocacy, we walk beside veterans at every step of their journey home.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="how" id="how">
+<!-- HOW WE HELP -->
+<section class="how" id="how" aria-labelledby="how-heading">
   <div class="how-inner">
     <div class="section-label">Our Approach</div>
-    <h2 class="section-title">Three tiers of impact, one unbreakable commitment</h2>
+    <h2 class="section-title" id="how-heading">Three tiers of impact, one unbreakable commitment</h2>
     <p class="section-body">We believe in winning battles you can actually fight — starting with immediate relief, building toward lasting change. Every step forward matters.</p>
     <div class="tiers">
       <div class="tier-card now">
@@ -252,12 +706,13 @@
   </div>
 </section>
 
-<section id="story">
+<!-- STORY -->
+<section id="story" aria-labelledby="story-heading">
   <div class="story">
     <div class="story-grid">
       <div class="story-body">
         <div class="section-label">Our Story</div>
-        <h2 class="section-title">Started with heart. Rebuilding with purpose.</h2>
+        <h2 class="section-title" id="story-heading">Started with heart. Rebuilding with purpose.</h2>
         <p>HonorBound Heroes began the way most great ideas do — with a group of people who looked at a problem in their community and refused to look away. They saw veterans sleeping in parking lots, under bridges, invisible in the richest country in the world, and they said: not here, not on our watch.</p>
         <div class="pull-quote">One man standing is still a movement waiting to happen.</div>
         <p>The organization hit hard times. Founders moved on. Momentum stalled. But the mission never changed, and neither did John McAllister — the one constant through it all. John has carried HonorBound Heroes on his back through the difficult stretch, refusing to let it become just another good idea that faded away.</p>
@@ -265,39 +720,40 @@
       </div>
       <div>
         <div class="john-card">
-          <div class="john-avatar">JM</div>
+          <img src="HBH_LOGO.jpg" alt="HonorBound Heroes" class="john-logo">
           <h4>John McAllister</h4>
           <div class="role">Executive Director</div>
           <p>John has kept the HonorBound flame alive through difficult times. His commitment to veterans' dignity and his refusal to quit are the foundation this organization is rebuilding on.</p>
         </div>
-        <div style="background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: 4px; padding: 1.5rem; margin-top: 1.5rem;">
-          <div class="section-label" style="margin-bottom: 0.5rem;">501(c)(3) Status</div>
-          <p style="font-size: 0.88rem; color: #8a9bb5; line-height: 1.6;">HonorBound Heroes is a registered nonprofit. Your donations may be tax-deductible. See our <a href="https://www.honorboundheroes.com/501c3-non-profit" style="color: var(--red);" target="_blank">501(c)(3) documentation</a>.</p>
+        <div style="background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:4px;padding:1.5rem;margin-top:1.5rem;">
+          <div class="section-label" style="margin-bottom:0.5rem">501(c)(3) Status</div>
+          <p style="font-size:0.88rem;color:#8a9bb5;line-height:1.6">HonorBound Heroes is a registered nonprofit. EIN: 99-1356980. Your donations may be tax-deductible. See our <a href="https://www.honorboundheroes.com/501c3-non-profit" style="color:var(--red)" target="_blank">501(c)(3) documentation</a>.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="involved" id="involved">
+<!-- GET INVOLVED -->
+<section class="involved" id="involved" aria-labelledby="involved-heading">
   <div class="involved-inner">
     <div class="section-label">Get Involved</div>
-    <h2 class="section-title">There are more ways to help than you think</h2>
+    <h2 class="section-title" id="involved-heading">There are more ways to help than you think</h2>
     <p class="section-body">Whether you have five dollars or five hours, your contribution matters. Here's how you can stand with veterans today.</p>
     <div class="involve-cards">
-      <a href="https://givebutter.com/HonorBound" class="involve-card" target="_blank">
+      <a href="https://givebutter.com/HonorBound" class="involve-card" target="_blank" rel="noopener">
         <div class="involve-icon">🎖</div>
         <h3>Donate</h3>
-        <p>Every dollar goes toward veteran support. Even $25 can cover a care kit for a veteran in need.</p>
+        <p>Every dollar goes directly to veteran support. Even $25 can cover an emergency care kit for a veteran in crisis.</p>
         <div class="cta-arrow">Give Now →</div>
       </a>
-      <a href="get-involved.html" class="involve-card">
+      <a href="mailto:contact@honorboundheroes.org" class="involve-card">
         <div class="involve-icon">🤝</div>
         <h3>Volunteer</h3>
         <p>We need people on the ground — at care kit drives, outreach events, and behind the scenes. Skills of all kinds are welcome.</p>
         <div class="cta-arrow">Reach Out →</div>
       </a>
-      <a href="get-involved.html" class="involve-card">
+      <a href="#board" class="involve-card">
         <div class="involve-icon">🏛</div>
         <h3>Join the Board</h3>
         <p>We're actively building a board of directors. If you have experience in nonprofit management, law, finance, or community organizing, we want to hear from you.</p>
@@ -307,10 +763,11 @@
   </div>
 </section>
 
-<section id="board">
+<!-- BOARD -->
+<section id="board" aria-labelledby="board-heading">
   <div class="board">
     <div class="section-label">Board of Directors</div>
-    <h2 class="section-title">Help lead this mission</h2>
+    <h2 class="section-title" id="board-heading">Help lead this mission</h2>
     <p class="section-body">HonorBound Heroes is actively recruiting a founding board of directors. This is a ground-floor opportunity to shape a veteran-serving organization that is serious about doing real work in real communities.</p>
     <div class="board-cta-box">
       <div>
@@ -318,15 +775,17 @@
         <p>We need individuals with backgrounds in: nonprofit governance, legal &amp; compliance, finance &amp; fundraising, community outreach, veterans' services, marketing, and healthcare. Commitment is quarterly meetings, active committee participation, and a genuine passion for the mission.</p>
       </div>
       <div>
-        <a href="get-involved.html" class="btn-primary" style="white-space: nowrap; display: inline-block;">Express Interest</a>
+        <a href="mailto:contact@honorboundheroes.org" class="btn-primary" style="white-space:nowrap;display:inline-block">Express Interest</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <div class="footer-brand">
-    <span class="logo">HonorBound Heroes</span>
+    <img src="HBH_LOGO.jpg" alt="HonorBound Heroes" class="footer-brand-logo">
+    <span class="logo-name">HonorBound Heroes</span>
     <p>Serving homeless veterans and those in need with compassion, urgency, and respect. No one who served our country should face homelessness alone.</p>
   </div>
   <div class="footer-col">
@@ -334,22 +793,22 @@
     <a href="#mission">Our Mission</a>
     <a href="#how">Our Work</a>
     <a href="#story">Our Story</a>
-    <a href="get-involved.html">Get Involved</a>
-    <a href="get-involved.html">Join the Board</a>
+    <a href="veteran-housing-resources.html">Housing Resources</a>
+    <a href="#involved">Get Involved</a>
+    <a href="#board">Join the Board</a>
   </div>
   <div class="footer-col">
     <h4>Connect</h4>
-    <a href="https://www.facebook.com/honorbounheroes" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/honorboundheroes/" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@honorbound2024" target="_blank">TikTok</a>
-    <a href="https://givebutter.com/HonorBound" target="_blank">Donate via GiveButter</a>
-    <a href="https://bonfire.com/honorbound" target="_blank">Shop &amp; Support</a>
+    <a href="https://www.facebook.com/honorbounheroes" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/honorboundheroes/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@honorbound2024" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://givebutter.com/HonorBound" target="_blank" rel="noopener">Donate via GiveButter</a>
+    <a href="https://bonfire.com/honorbound" target="_blank" rel="noopener">Shop &amp; Support</a>
   </div>
 </footer>
 <div class="footer-bottom">
-  &copy; 2024&ndash;2026 HonorBound Heroes &middot; 501(c)(3) Nonprofit Organization &middot; All donations may be tax-deductible &middot;
-  <a href="https://www.honorboundheroes.com/terms" style="color: #4a5a6a;">Terms</a> &middot;
-  <a href="https://www.honorboundheroes.com/new-page" style="color: #4a5a6a;">Privacy</a>
+  © 2024–2026 HonorBound Heroes · 501(c)(3) Nonprofit · EIN 99-1356980 · Remus, MI (Mecosta County) · Donations may be tax-deductible ·
+  <a href="https://www.honorboundheroes.com/terms">Terms</a> · <a href="https://www.honorboundheroes.com/new-page">Privacy</a>
 </div>
 
 </body>
