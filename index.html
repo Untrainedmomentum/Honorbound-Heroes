@@ -148,7 +148,7 @@
   /* ── HERO ── */
   .hero {
     min-height: 100vh; display: flex; flex-direction: column;
-    justify-content: center; padding: 8rem 3rem 5rem;
+    justify-content: center; padding: 8rem 4rem 5rem;
     position: relative; overflow: hidden;
   }
   .hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(178,34,52,0.07) 0%, transparent 70%); }
@@ -264,6 +264,7 @@
   @media (max-width: 768px) {
     nav { padding: 0.6rem 1.2rem; }
     .nav-links { display: none; }
+    .nav-hamburger { display: flex; }
     section { padding: 4rem 1.5rem; }
     .hero { padding: 7rem 1.5rem 4rem; }
     .hero-stat-row { flex-wrap: wrap; gap: 2rem; }
@@ -273,6 +274,111 @@
     .board-cta-box { grid-template-columns: 1fr; }
     footer { grid-template-columns: 1fr; padding: 2rem 1.5rem; }
   }
+
+/* ── HAMBURGER MENU ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 110;
+  flex-shrink: 0;
+}
+.nav-hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+  transform-origin: center;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 68px; left: 0; right: 0;
+  background: rgba(11,31,58,0.99);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--red);
+  z-index: 99;
+  padding: 1rem 0;
+  flex-direction: column;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  color: var(--off-white);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: background 0.15s, color 0.15s;
+  display: block;
+}
+.mobile-nav a:hover { background: rgba(178,34,52,0.1); color: var(--white); }
+.mobile-nav a.mobile-active { color: var(--white); border-left: 3px solid var(--red); padding-left: calc(2rem - 3px); }
+.mobile-nav .mobile-section-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+  padding: 1rem 2rem 0.4rem;
+}
+.mobile-nav .mobile-donate {
+  margin: 1rem 2rem 0.5rem;
+  background: var(--red);
+  color: var(--white) !important;
+  text-align: center;
+  border-radius: 2px;
+  border-bottom: none !important;
+  padding: 0.85rem 2rem !important;
+}
+.mobile-nav .mobile-donate:hover { background: var(--red-dark) !important; }
+
+  /* ── HERO TWO-COLUMN LAYOUT ── */
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+  .hero-content { display: flex; flex-direction: column; }
+  .hero-logo-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .hero-logo-large {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 40px rgba(0,0,0,0.5));
+    animation: logoFloat 6s ease-in-out infinite;
+  }
+  @keyframes logoFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @media (max-width: 768px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-logo-col { order: -1; }
+    .hero-logo-large { width: 180px; height: 180px; }
+  }
 </style>
 </head>
 <body>
@@ -280,7 +386,6 @@
 <!-- NAV -->
 <nav aria-label="Main navigation">
   <a href="/" class="nav-logo-wrap" aria-label="HonorBound Heroes home">
-    <img src="hbh_logo.jpg" alt="HonorBound Heroes" class="nav-logo-img">
     <div>
       <span class="nav-logo-text">HonorBound Heroes</span>
       <span class="nav-logo-tagline">Where compassion meets commitment</span>
@@ -303,24 +408,36 @@
     <li><a href="get-involved.html">Get Involved</a></li>
   </ul>
   <a href="https://givebutter.com/HonorBound" class="nav-cta" target="_blank" rel="noopener">Donate Now</a>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
 <section class="hero" aria-label="Hero">
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="hero-stripe" aria-hidden="true"></div>
-<div class="hero-badge">Michigan Nonprofit · Est. 2024 · Rebuilding in 2026</div>
 
-  <h1>
-    <span class="line-accent">No Veteran Left Behind</span>
-    They kept <em>their</em><br>oath. Now <em>we</em><br>keep ours.
-  </h1>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">Michigan Nonprofit · Est. 2024 · Rebuilding in 2026</div>
 
-  <p class="hero-sub">HonorBound Heroes provides immediate relief and long-term support to homeless veterans in our communities — because those who served deserve more than survival.</p>
+      <h1>
+        <span class="line-accent">No Veteran Left Behind</span>
+        They kept <em>their</em><br>oath. Now <em>we</em><br>keep ours.
+      </h1>
 
-  <div class="hero-actions">
-    <a href="https://givebutter.com/HonorBound" class="btn-primary" target="_blank" rel="noopener">Make a Difference Today</a>
-    <a href="#mission" class="btn-secondary">Learn Our Mission</a>
+      <p class="hero-sub">HonorBound Heroes provides immediate relief and long-term support to homeless veterans in our communities — because those who served deserve more than survival.</p>
+
+      <div class="hero-actions">
+        <a href="https://givebutter.com/HonorBound" class="btn-primary" target="_blank" rel="noopener">Make a Difference Today</a>
+        <a href="#mission" class="btn-secondary">Learn Our Mission</a>
+      </div>
+    </div>
+
+    <div class="hero-logo-col">
+      <img src="hbh_logo.jpg" alt="HonorBound Heroes — Where compassion meets commitment" class="hero-logo-large">
+    </div>
   </div>
 
   <div class="hero-stat-row">
@@ -526,5 +643,21 @@
   <a href="https://www.honorboundheroes.com/terms">Terms</a> · <a href="https://www.honorboundheroes.com/new-page">Privacy</a>
 </div>
 
+<script>
+var btn = document.getElementById('nav-hamburger');
+var menu = document.getElementById('mobile-nav');
+btn.addEventListener('click', function() {
+  var open = menu.classList.toggle('open');
+  btn.classList.toggle('open', open);
+  btn.setAttribute('aria-expanded', open);
+});
+document.addEventListener('click', function(e) {
+  if (!menu.contains(e.target) && !btn.contains(e.target)) {
+    menu.classList.remove('open');
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
 </body>
 </html>
