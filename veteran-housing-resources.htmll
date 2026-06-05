@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══════════════════════════════════════════════
+     PRIMARY SEO META
+════════════════════════════════════════════════ -->
+<title>Free Veteran Housing Resources — HUD-VASH, SSVF, GPD & More | HonorBound Heroes</title>
+<meta name="description" content="Free national housing programs for homeless veterans — HUD-VASH, SSVF, GPD, Volunteers of America, NCHV, and more. Includes what to have ready and how to navigate each program. From HonorBound Heroes, 501(c)(3) nonprofit, Remus MI.">
+<meta name="keywords" content="veteran housing resources, homeless veteran housing, HUD-VASH application, SSVF veteran families, GPD veteran housing, veteran housing programs, free veteran resources, veteran homelessness Michigan, veteran housing guide, how to apply HUD-VASH, SSVF how to apply, veteran housing assistance national, discharge upgrade veteran, Veterans Benefits Administration">
+<meta name="author" content="HonorBound Heroes">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.honorboundheroes.com/veteran-housing-resources.html">
+
+<!-- ═══════════════════════════════════════════════
+     OPEN GRAPH
+════════════════════════════════════════════════ -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.honorboundheroes.com/veteran-housing-resources.html">
+<meta property="og:title" content="Free Veteran Housing Resources — HUD-VASH, SSVF, GPD & More">
+<meta property="og:description" content="Step-by-step guides for every major national veteran housing program. What to bring, who to call, and how to navigate — from HonorBound Heroes.">
+<meta property="og:image" content="https://www.honorboundheroes.com/HBH_LOGO.jpg">
+<meta property="og:site_name" content="HonorBound Heroes">
+
+<!-- ═══════════════════════════════════════════════
+     TWITTER CARD
+════════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Veteran Housing Resources — HUD-VASH, SSVF & More | HonorBound Heroes">
+<meta name="twitter:description" content="Free guides to every major national veteran housing program. What to have ready, who to call, how to navigate.">
+<meta name="twitter:image" content="https://www.honorboundheroes.com/HBH_LOGO.jpg">
+
+<!-- ═══════════════════════════════════════════════
+     SCHEMA — WebPage + ItemList + NGO
+════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Free Veteran Housing Resources",
+  "description": "National veteran housing programs with application guides — HUD-VASH, SSVF, GPD, Volunteers of America, NCHV, Soldier On, VBA, Legal Services Corporation, PCAFC, and 211.",
+  "url": "https://www.honorboundheroes.com/veteran-housing-resources.html",
+  "publisher": {
+    "@type": "NGO",
+    "name": "HonorBound Heroes",
+    "url": "https://www.honorboundheroes.com",
+    "logo": "https://www.honorboundheroes.com/HBH_LOGO.jpg",
+    "taxID": "99-1356980",
+    "nonprofitStatus": "Nonprofit501c3",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Remus",
+      "addressRegion": "MI",
+      "addressCountry": "US"
+    }
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem","position":1,"name":"Home","item":"https://www.honorboundheroes.com/"},
+      {"@type": "ListItem","position":2,"name":"Resources","item":"https://www.honorboundheroes.com/veteran-housing-resources.html"},
+      {"@type": "ListItem","position":3,"name":"Housing & Homelessness","item":"https://www.honorboundheroes.com/veteran-housing-resources.html"}
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "National Veteran Housing Programs",
+  "description": "Free national housing programs available to homeless veterans and their families",
+  "numberOfItems": 10,
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"HUD-VASH","description":"Section 8 housing vouchers for homeless veterans paired with VA case management","url":"https://www.va.gov/homeless/hud-vash.asp"},
+    {"@type":"ListItem","position":2,"name":"Grant and Per Diem (GPD)","description":"VA-funded local nonprofits providing transitional housing for homeless veterans","url":"https://www.va.gov/homeless/gpd.asp"},
+    {"@type":"ListItem","position":3,"name":"Volunteers of America Veteran Housing","description":"Transitional and permanent supportive housing for veterans nationwide","url":"https://www.voa.org/veterans"},
+    {"@type":"ListItem","position":4,"name":"SSVF — Supportive Services for Veteran Families","description":"Rapid rehousing and homelessness prevention for very low-income veteran families","url":"https://www.va.gov/homeless/ssvf/"},
+    {"@type":"ListItem","position":5,"name":"National Coalition for Homeless Veterans","description":"National directory and advocacy network connecting veterans to local housing providers","url":"https://nchv.org"},
+    {"@type":"ListItem","position":6,"name":"Soldier On","description":"Permanent supportive housing communities for veterans using peer-support model","url":"https://www.wesoldieron.org"},
+    {"@type":"ListItem","position":7,"name":"Veterans Benefits Administration","description":"Disability compensation and pension benefits for veterans","url":"https://www.va.gov"},
+    {"@type":"ListItem","position":8,"name":"Legal Services Corporation — Veteran Access","description":"Free civil legal aid including eviction defense and discharge upgrades for veterans","url":"https://www.lsc.gov/about-lsc/what-legal-aid/veteran-resources"},
+    {"@type":"ListItem","position":9,"name":"PCAFC — Program of Comprehensive Assistance for Family Caregivers","description":"Stipend, health insurance, and respite care for caregivers of post-9/11 veterans","url":"https://www.caregiver.va.gov"},
+    {"@type":"ListItem","position":10,"name":"211 Helpline","description":"Free 24/7 local health and human services referral line for veterans and families","url":"https://www.211.org"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What documents do I need to apply for veteran housing assistance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most important document is your DD-214 (Certificate of Release or Discharge from Active Duty). You will also typically need a photo ID, Social Security card or number, proof of homelessness or housing instability, and any income documentation such as disability award letters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can veterans with less-than-honorable discharge get housing help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in many cases. A less-than-honorable discharge does not automatically disqualify you from HUD-VASH or other programs. VA has an Other Than Honorable (OTH) policy that allows case-by-case review. Legal aid organizations such as the Legal Services Corporation can also help pursue a discharge upgrade, which can restore full VA benefit eligibility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the fastest way to get emergency housing as a veteran?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call the National Call Center for Homeless Veterans at 1-877-4AID-VET (1-877-424-3838), available 24/7 and free. You can also dial 211 from any phone to reach local emergency housing resources. Volunteers of America and SSVF grantees can sometimes place veterans quickly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is HUD-VASH and how do I apply?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HUD-VASH combines Section 8 housing vouchers with VA case management for homeless veterans. To apply, contact your local VA Medical Center and ask to speak with a HUD-VASH coordinator. You must be enrolled in VA healthcare. Bring your DD-214, photo ID, proof of homelessness, and Social Security number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is SSVF and who qualifies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SSVF (Supportive Services for Veteran Families) provides rapid rehousing and homelessness prevention for veteran families with income below 50% of the Area Median Income. It can cover rental assistance, security deposits, utility help, and case management. Find local SSVF grantees at va.gov/homeless/ssvf."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0B1F3A;
+    --navy-mid: #162d50;
+    --navy-card: #0f2540;
+    --red: #B22234;
+    --red-dark: #8f1a28;
+    --white: #FFFFFF;
+    --off-white: #EEF1F7;
+    --text-muted: #7a8fa8;
+    --gold: #C9921A;
+    --border: rgba(255,255,255,0.1);
+    --border-subtle: rgba(255,255,255,0.06);
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Barlow', sans-serif; background: var(--navy); color: var(--off-white); line-height: 1.6; font-size: 16px; overflow-x: hidden; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.6rem 3rem;
+    background: rgba(11,31,58,0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    gap: 1.5rem;
+  }
+
+  .nav-logo-wrap { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; flex-shrink: 0; }
+  .nav-logo-img { width: 44px; height: 44px; object-fit: contain; border-radius: 50%; background: #fff; padding: 2px; }
+  .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--white); display: block; line-height: 1.15; }
+  .nav-logo-tagline { font-family: 'Barlow', sans-serif; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.08em; color: var(--text-muted); text-transform: uppercase; display: block; }
+
+  .nav-links { display: flex; gap: 0; list-style: none; align-items: center; }
+  .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color .2s; padding: 0 0.85rem; }
+  .nav-links a:hover { color: var(--white); }
+  .nav-links a.active { color: var(--white); }
+
+  .nav-dropdown { position: relative; }
+  .nav-dropdown-trigger {
+    background: none; border: none; cursor: pointer;
+    color: var(--white); font-family: 'Barlow', sans-serif;
+    font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em;
+    text-transform: uppercase; padding: 0 0.85rem;
+    display: flex; align-items: center; gap: 4px;
+    border-bottom: 2px solid var(--red); padding-bottom: 2px;
+  }
+  .nav-dropdown-trigger svg { width: 10px; height: 10px; transition: transform .2s; }
+  .nav-dropdown:hover .nav-dropdown-trigger svg { transform: rotate(180deg); }
+
+  .nav-dropdown-menu {
+    position: absolute; top: calc(100% + 8px); left: 0;
+    background: var(--navy-mid);
+    border: 1px solid rgba(178,34,52,.3);
+    border-top: 2px solid var(--red);
+    min-width: 200px;
+    opacity: 0; visibility: hidden;
+    transform: translateY(-6px);
+    transition: all .18s ease; z-index: 200;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .dropdown-section-lbl { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--red); padding: .55rem 1rem .25rem; }
+  .nav-dropdown-menu a { display: flex; align-items: center; gap: 8px; padding: .5rem 1rem; font-size: 13px; color: rgba(255,255,255,.75); text-decoration: none; transition: background .12s; text-transform: none; letter-spacing: 0; }
+  .nav-dropdown-menu a:hover { background: rgba(178,34,52,.12); color: #fff; }
+  .nav-dropdown-menu a.current { color: #fff; background: rgba(178,34,52,.08); }
+  .nav-dropdown-menu .ddot { width: 5px; height: 5px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+  .nav-dropdown-menu a.disabled { opacity: .4; pointer-events: none; }
+  .soon-tag { font-size: 9px; margin-left: auto; color: rgba(255,255,255,.3); }
+
+  .nav-cta {
+    background: var(--red); color: var(--white) !important;
+    padding: 0.5rem 1.4rem !important; border-radius: 2px;
+    font-weight: 600 !important; font-size: 0.8rem !important;
+    letter-spacing: 0.06em !important; text-transform: uppercase;
+    text-decoration: none; transition: background .2s;
+    flex-shrink: 0; white-space: nowrap;
+  }
+  .nav-cta:hover { background: var(--red-dark) !important; }
+
+  /* ── PAGE HERO ── */
+  .page-hero {
+    background: var(--navy-mid);
+    border-bottom: 3px solid var(--red);
+    padding: 7rem 3rem 3rem;
+    position: relative; overflow: hidden;
+  }
+  .page-hero-inner { max-width: 1100px; margin: 0 auto; }
+
+  .page-hero-watermark {
+    position: absolute; right: 3rem; top: 50%;
+    transform: translateY(-50%);
+    width: 260px; height: 260px;
+    object-fit: contain; opacity: 0.05;
+    pointer-events: none; filter: brightness(10);
+  }
+
+  .breadcrumb {
+    font-size: 0.75rem; color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 6px;
+    flex-wrap: wrap;
+  }
+  .breadcrumb a { color: var(--text-muted); text-decoration: none; transition: color .15s; }
+  .breadcrumb a:hover { color: var(--white); }
+  .breadcrumb span { color: rgba(255,255,255,.3); }
+
+  .page-eyebrow {
+    font-size: 0.75rem; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); margin-bottom: 0.75rem;
+  }
+  .page-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 900; line-height: 1.1;
+    color: var(--white); margin-bottom: 0.85rem;
+  }
+  .page-hero-sub {
+    font-size: 1rem; font-weight: 300;
+    color: #b0bfcf; max-width: 580px;
+    line-height: 1.75; margin-bottom: 1.75rem;
+  }
+
+  .crisis-pill {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: rgba(178,34,52,.1);
+    border: 1px solid rgba(178,34,52,.35);
+    padding: 0.7rem 1.25rem; border-radius: 3px;
+  }
+  .crisis-pill .c-label { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
+  .crisis-pill .c-num { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--white); }
+  .crisis-pill .c-sub { font-size: 11px; color: var(--text-muted); }
+
+  /* ── URGENT STRIP ── */
+  .urgent-strip {
+    background: var(--red-dark);
+    padding: 0.65rem 2rem;
+    text-align: center;
+    font-size: 13px; color: rgba(255,255,255,.9);
+  }
+  .urgent-strip strong { color: #ffd27a; }
+
+  /* ── MAIN ── */
+  main { max-width: 1100px; margin: 0 auto; padding: 3rem 3rem 5rem; }
+
+  .section-block { margin-bottom: 3.5rem; }
+  .section-hdr {
+    display: flex; align-items: baseline; gap: 1rem;
+    margin-bottom: 1.25rem; padding-bottom: 0.65rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .section-hdr h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--red);
+  }
+  .section-hdr span { font-size: 12px; color: var(--text-muted); }
+
+  /* ── CARDS ── */
+  .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 16px; }
+
+  .r-card {
+    background: var(--navy-card);
+    border: 1px solid var(--border-subtle);
+    border-top: 3px solid var(--navy-mid);
+    border-radius: 3px;
+    padding: 1.35rem 1.4rem 1.1rem;
+    cursor: pointer;
+    transition: border-top-color .15s, border-color .15s, transform .15s;
+    position: relative;
+  }
+  .r-card:hover { border-top-color: var(--red); border-color: rgba(178,34,52,.25); transform: translateY(-2px); }
+
+  .r-card-top { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 0.75rem; }
+  .r-icon {
+    width: 38px; height: 38px; border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .r-icon svg { width: 18px; height: 18px; }
+  .i-red { background: rgba(178,34,52,.15); color: #e06070; }
+  .i-blue { background: rgba(74,127,193,.15); color: #7aaee8; }
+  .i-gold { background: rgba(201,146,26,.12); color: #d4a030; }
+  .i-teal { background: rgba(20,140,120,.15); color: #3ec9ae; }
+  .i-slate { background: rgba(255,255,255,.07); color: #9ab0c8; }
+
+  .r-name { font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700; color: var(--white); line-height: 1.2; margin-bottom: 2px; letter-spacing: .03em; text-transform: uppercase; }
+  .r-org { font-size: 11px; color: var(--text-muted); }
+  .r-desc { font-size: 13px; color: #9aafbf; line-height: 1.6; margin-bottom: 0.85rem; font-weight: 300; }
+
+  .r-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 0.85rem; }
+  .tag { font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px; border-radius: 2px; }
+  .t-vet { background: rgba(74,127,193,.15); color: #7aaee8; }
+  .t-fam { background: rgba(140,90,180,.15); color: #c09ae0; }
+  .t-free { background: rgba(30,140,80,.15); color: #5ecf90; }
+  .t-24h { background: rgba(178,34,52,.15); color: #e06070; }
+
+  .r-cta { display: flex; align-items: center; justify-content: space-between; padding-top: 0.75rem; border-top: 1px solid var(--border-subtle); gap: 8px; }
+  .r-link { font-size: 11px; color: #7aaee8; text-decoration: none; display: flex; align-items: center; gap: 3px; font-weight: 500; transition: color .15s; }
+  .r-link:hover { color: #fff; text-decoration: underline; }
+  .tips-btn {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: .1em; text-transform: uppercase;
+    background: var(--red); color: #fff;
+    border: none; padding: 5px 12px; border-radius: 2px;
+    cursor: pointer; transition: background .15s; white-space: nowrap;
+  }
+  .tips-btn:hover { background: #c01e30; }
+
+  /* ── MODAL ── */
+  .modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(5,12,25,.85);
+    z-index: 500; display: flex;
+    align-items: center; justify-content: center;
+    padding: 1.5rem;
+    opacity: 0; visibility: hidden; transition: all .2s;
+  }
+  .modal-overlay.open { opacity: 1; visibility: visible; }
+
+  .modal {
+    background: var(--navy-mid);
+    border-top: 3px solid var(--red);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--red);
+    border-radius: 3px;
+    max-width: 660px; width: 100%;
+    max-height: 88vh; overflow-y: auto;
+    transform: translateY(14px); transition: transform .2s;
+  }
+  .modal-overlay.open .modal { transform: translateY(0); }
+
+  .modal-hdr {
+    background: rgba(0,0,0,.3);
+    padding: 1.25rem 1.5rem;
+    display: flex; align-items: flex-start;
+    gap: 12px; justify-content: space-between;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .modal-hdr-logo {
+    width: 40px; height: 40px;
+    object-fit: contain; background: #fff;
+    border-radius: 50%; padding: 2px; flex-shrink: 0;
+  }
+
+  .modal-hdr-left { flex: 1; }
+  .modal-hdr-left h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px; font-weight: 700;
+    color: var(--white); letter-spacing: .04em;
+    text-transform: uppercase; margin-bottom: 2px;
+  }
+  .modal-hdr-left p { font-size: 12px; color: var(--text-muted); }
+
+  .modal-close { background: none; border: none; color: rgba(255,255,255,.5); cursor: pointer; font-size: 20px; padding: 2px 4px; transition: color .12s; flex-shrink: 0; }
+  .modal-close:hover { color: var(--white); }
+
+  .modal-body { padding: 1.5rem; }
+  .modal-section { margin-bottom: 1.5rem; }
+  .modal-section:last-child { margin-bottom: 0; }
+
+  .modal-section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px; font-weight: 700;
+    letter-spacing: .12em; text-transform: uppercase;
+    color: var(--red); margin-bottom: 0.65rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .modal-section ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+  .modal-section li { font-size: 14px; color: #b0bfcf; padding-left: 1.1rem; position: relative; line-height: 1.55; font-weight: 300; }
+  .modal-section li::before { content: '—'; position: absolute; left: 0; color: var(--red); font-weight: 600; }
+
+  .modal-alert {
+    background: rgba(201,146,26,.08);
+    border-left: 3px solid var(--gold);
+    padding: .75rem 1rem;
+    font-size: 13px; color: #d4b060;
+    line-height: 1.6; margin-top: 1rem; border-radius: 0 2px 2px 0;
+  }
+
+  .modal-ftr {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border-subtle);
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; flex-wrap: wrap;
+  }
+  .modal-ftr-link {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px; font-weight: 700;
+    letter-spacing: .08em; text-transform: uppercase;
+    color: var(--off-white); text-decoration: none;
+    display: flex; align-items: center; gap: 5px;
+    transition: color .12s;
+  }
+  .modal-ftr-link:hover { color: #fff; text-decoration: underline; }
+  .modal-ftr-note { font-size: 11px; color: var(--text-muted); }
+
+  /* ── PAGE FOOTER ── */
+  .page-footer {
+    background: rgba(0,0,0,.4);
+    border-top: 1px solid var(--border-subtle);
+    padding: 2.5rem 3rem;
+    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem;
+  }
+  .pf-brand-logo { width: 56px; height: 56px; object-fit: contain; background: #fff; border-radius: 50%; padding: 3px; margin-bottom: 0.85rem; display: block; }
+  .pf-brand-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--white); display: block; margin-bottom: 0.5rem; }
+  .pf-brand p { font-size: 0.85rem; color: #6a7a8a; line-height: 1.7; max-width: 260px; }
+  .pf-col h4 { font-size: 0.75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.9rem; }
+  .pf-col a { display: block; color: #6a7a8a; text-decoration: none; font-size: 0.88rem; margin-bottom: 0.45rem; transition: color .2s; }
+  .pf-col a:hover { color: var(--white); }
+  .footer-bottom { text-align: center; padding: 1.1rem 3rem; font-size: 0.78rem; color: #4a5a6a; border-top: 1px solid rgba(255,255,255,.04); }
+  .footer-bottom a { color: #4a5a6a; }
+
+  .flag-divider { height: 4px; background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, var(--white) 33%, var(--white) 66%, #0A3577 66%, #0A3577 100%); }
+
+  @media (max-width: 768px) {
+    nav { padding: 0.6rem 1.2rem; }
+    .nav-links { display: none; }
+    .page-hero { padding: 6rem 1.5rem 2.5rem; }
+    main { padding: 2rem 1.5rem 4rem; }
+    .cards-grid { grid-template-columns: 1fr; }
+    .page-footer { grid-template-columns: 1fr; padding: 2rem 1.5rem; }
+    .page-hero-watermark { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav aria-label="Main navigation">
+  <a href="index.html" class="nav-logo-wrap" aria-label="HonorBound Heroes home">
+    <img src="HBH_LOGO.jpg" alt="HonorBound Heroes Logo" class="nav-logo-img">
+    <div>
+      <span class="nav-logo-text">HonorBound Heroes</span>
+      <span class="nav-logo-tagline">Where compassion meets commitment</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html#mission">Mission</a></li>
+    <li><a href="index.html#how">Our Work</a></li>
+    <li><a href="index.html#story">Our Story</a></li>
+
+    <li class="nav-dropdown">
+      <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+        Resources
+        <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="1,3 5,7 9,3"/></svg>
+      </button>
+      <div class="nav-dropdown-menu" role="menu">
+        <p class="dropdown-section-lbl">By Topic</p>
+        <a href="veteran-housing-resources.html" class="current" role="menuitem"><span class="ddot"></span>Housing &amp; Homelessness</a>
+      </div>
+    </li>
+
+    <li><a href="index.html#involved">Get Involved</a></li>
+    <li><a href="index.html#board">Join the Board</a></li>
+  </ul>
+
+  <a href="https://givebutter.com/HonorBound" class="nav-cta" target="_blank" rel="noopener">Donate Now</a>
+</nav>
+
+<!-- URGENT -->
+<div class="urgent-strip" role="alert">
+  Facing homelessness tonight? Call <strong>1-877-4AID-VET (1-877-424-3838)</strong> — free, 24/7, VA housing specialists standing by.
+</div>
+
+<!-- HERO -->
+<div class="page-hero">
+  <img src="HBH_LOGO.jpg" alt="" class="page-hero-watermark" aria-hidden="true">
+  <div class="page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">›</span>
+      <a href="#">Resources</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Housing &amp; Homelessness</span>
+    </nav>
+    <p class="page-eyebrow">HonorBound Heroes · Resource Directory</p>
+    <h1>Veteran Housing &amp; Homelessness Resources</h1>
+    <p class="page-hero-sub">Every program below is free and available nationally. Click any card for what to have ready and how to navigate the process — not just a link, a real guide.</p>
+    <div class="crisis-pill">
+      <div>
+        <p class="c-label">Veterans Crisis Line</p>
+        <p class="c-num">988 → Press 1</p>
+        <p class="c-sub">Free · Confidential · 24/7 · Housing specialists available</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flag-divider" aria-hidden="true"></div>
+
+<!-- MAIN -->
+<main>
+
+  <!-- Emergency & Transitional -->
+  <div class="section-block">
+    <div class="section-hdr">
+      <h2>Emergency &amp; Transitional Housing</h2>
+      <span>3 programs</span>
+    </div>
+    <div class="cards-grid">
+
+      <article class="r-card" onclick="openModal('hudvash')" role="button" tabindex="0" aria-label="HUD-VASH — click for tips and guide">
+        <div class="r-card-top">
+          <div class="r-icon i-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div><p class="r-name">HUD-VASH</p><p class="r-org">HUD + Department of Veterans Affairs</p></div>
+        </div>
+        <p class="r-desc">Section 8 housing vouchers for homeless veterans, paired with VA case management. The largest federal veteran housing program in the US.</p>
+        <div class="r-tags"><span class="tag t-vet">Veterans</span><span class="tag t-free">Free</span></div>
+        <div class="r-cta">
+          <a class="r-link" href="https://www.va.gov/homeless/hud-vash.asp" target="_blank" rel="noopener" onclick="event.stopPropagation()">va.gov/homeless/hud-vash ↗</a>
+          <button class="tips-btn">Tips &amp; Guide</button>
+        </div>
+      </article>
+
+      <article class="r-card" onclick="openModal('gpd')" role="button" tabindex="0" aria-label="Grant and Per Diem — click for tips and guide">
+        <div class="r-card-top">
+          <div class="r-icon i-teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div><p class="r-name">Grant &amp; Per Diem (GPD)</p><p class="r-org">VA Homeless Programs Office</p></div>
+        </div>
+        <p class="r-desc">VA-funded local nonprofits providing transitional housing and services for homeless veterans. Use the VA locator to find a provider near you.</p>
+        <div class="r-tags"><span class="tag t-vet">Veterans</span><span class="tag t-free">Free</span></div>
+        <div class="r-cta">
+          <a class="r-link" href="https://www.va.gov/homeless/gpd.asp" target="_blank" rel="noopener" onclick="event.stopPropagation()">va.gov/homeless/gpd ↗</a>
+          <button class="tips-btn">Tips &amp; Guide</button>
+        </div>
+      </article>
+
+      <article class="r-card" onclick="openModal('voa')" role="button" tabindex="0" aria-label="Volunteers of America — click for tips and guide">
+        <div class="r-card-top">
+          <div class="r-icon i-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div><p class="r-name">Volunteers of America</p><p class="r-org">National nonprofit · 300+ locations</p></div>
+        </div>
+        <p class="r-desc">Transitional and permanent supportive housing for veterans nationwide. One of the country's largest veteran housing providers.</p>
+        <div class="r-tags"><span class="tag t-vet">Veterans</span><span class="tag t-fam">Families</span><span class="tag t-free">Free</span></div>
+        <div class="r-cta">
+          <a class="r-link" href="https://www.voa.org/veterans" target="_blank" rel="noopener" onclick="event.stopPropagation()">voa.org/veterans ↗</a>
+          <button class="tips-btn">Tips &amp; Guide</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- Permanent -->
+  <div class="section-block">
+    <div class="section-hdr">
+      <h2>Permanent &amp; Supported Housing</h2>
+      <span>3 programs</span>
+    </div>
+    <div class="cards-grid">
+
+      <article class="r-card" onclick="openModal('ssvf')" role="button" tabindex="0">
+        <div class="r-card-top">
+          <div class="r-icon i-gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div><p class="r-name">SSVF — Supportive Services for Veteran Families</p><p class="r-org">VA · Nationwide grantee network</p></div>
+        </div>
+        <p class="r-desc">Rapid rehousing and homelessness prevention for very low-income veteran families. Covers rental assistance, deposits, utilities, and case management.</p>
+        <div class="r-tags"><span class="tag t-vet">Veterans</span><span class="tag t-fam">Families</span><span class="tag t-free">Free</span></div>
+        <div class="r-cta">
+          <a class="r-link" href="https://www.va.gov/homeless/ssvf/" target="_blank" rel="noopener" onclick="event.stopPropagation()">va.gov/homeless/ssvf ↗</a>
+          <button class="tips-btn">Tips &amp; Guide</button>
+        </div>
+      </article>
+
+      <article class="r-card" onclick="openModal('nchv')" role="button" tabindex="0">
+        <div class="r-card-top">
+          <div class="r-icon i-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <div><p class="r-name">NCHV — National Coalition for Homeless Veterans</p><p class="r-org">National advocacy + provider network</p></div>
+        </div>
+        <p class="r-desc">Connects veterans to a nationwide network of community-based housing providers. Includes a state-by-state resource locator.</p>
+        <div class="r-tags"><span class="tag t-vet">Veterans</span><span class="tag t-fam">Families</span></div>
+        <div class="r-cta">
+          <a class="r-link" href="https://nchv.org" target="_blank" rel="noopener" onclick="event.stopPropagation()">nchv.org ↗</a>
+          <button class="tips-btn">Tips &amp; Guide</button>
+        </div>
+      </article>
+
+      <article class="r-card" onclick="openModal('soldieron')" role="button" tabindex="0">
+        <div class="r-card-top">
+          <div class="r-icon i-slate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div><p class="r-name">Soldier On</p><p class="r-org">National nonprofit · Peer-support model</p></div>
+        </div>
+        <p class="r-desc">Permanent supportive housing communities for homeless veterans using a peer-support model — veterans helping veterans stabilize and rebuild.</p>
+        <div class="r-tags"><span class="tag t-vet">Veterans</span><span class="tag t-free">Free</span></div>
+        <div class="r-cta">
+          <a class="r-link" href="https://www.wesoldieron.org" target="_blank" rel="noopener" onclick="event.stopPropagation()">wesoldieron.org ↗</a>
+          <button class="tips-btn">Tips &amp; Guide</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- Financial & Legal -->
+  <div class="section-block">
+    <div class="section-hdr">
+      <h2>Financial Assistance &amp; Legal Aid</h2>
+      <span>2 programs</span>
+    </div>
+    <div class="cards-grid">
+
+      <article class="r-card" onclick="openModal('vba')" role="button" tabindex="0">
+        <div class="r-card-top">
+          <div class="r-icon i-gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div><p class="r-name">Veterans Benefits Administration</p><p class="r-org">U.S. Department of Veterans Affairs</p></div>
+        </div>
+        <p class="r-desc">Disability compensation and pension that can stabilize housing. Many homeless veterans are eligible for benefits they have never claimed.</p>
+        <div class="r-tags"><span class="tag t-vet">Veterans</span><span class="tag t-free">Free</span></div>
+        <div class="r-cta">
+          <a class="r-link" href="https://www.va.gov" target="_blank" rel="noopener" onclick="event.stopPropagation()">va.gov/benefits ↗</a>
+          <button class="tips-btn">Tips &amp; Guide</button>
+        </div>
+      </article>
+
+      <article class="r-card" onclick="openModal('lsc')" role="button" tabindex="0">
+        <div class="r-card-top">
+          <div class="r-icon i-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div><p class="r-name">Legal Services Corporation</p><p class="r-org">Federal nonprofit · Veteran access program</p></div>
+        </div>
+        <p class="r-desc">Free civil legal aid: eviction defense, benefits claims, discharge upgrades. Discharge status affects eligibility for nearly every VA housing program.</p>
+        <div class="r-tags"><span class="tag t-vet">Veterans</span><span class="tag t-fam">Families</span><span class="tag t-free">Free</span></div>
+        <div class="r-cta">
+          <a class="r-link" href="https://www.lsc.gov/about-lsc/what-legal-aid/veteran-resources" target="_blank" rel="noopener" onclick="event.stopPropagation()">lsc.gov/veteran-resources ↗</a>
+          <button class="tips-btn">Tips &amp; Guide</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- Family -->
+  <div class="section-block">
+    <div class="section-hdr">
+      <h2>For Family Members &amp; Caregivers</h2>
+      <span>2 programs</span>
+    </div>
+    <div class="cards-grid">
+
+      <article class="r-card" onclick="openModal('pcafc')" role="button" tabindex="0">
+        <div class="r-card-top">
+          <div class="r-icon i-teal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div><p class="r-name">PCAFC — Caregiver Assistance</p><p class="r-org">VA Caregiver Support Program</p></div>
+        </div>
+        <p class="r-desc">Monthly stipend, health insurance, and respite care for caregivers of eligible post-9/11 veterans. Can stabilize households at risk of losing housing.</p>
+        <div class="r-tags"><span class="tag t-fam">Family caregivers</span><span class="tag t-free">Free</span></div>
+        <div class="r-cta">
+          <a class="r-link" href="https://www.caregiver.va.gov" target="_blank" rel="noopener" onclick="event.stopPropagation()">caregiver.va.gov ↗</a>
+          <button class="tips-btn">Tips &amp; Guide</button>
+        </div>
+      </article>
+
+      <article class="r-card" onclick="openModal('211')" role="button" tabindex="0">
+        <div class="r-card-top">
+          <div class="r-icon i-slate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.18-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div><p class="r-name">211 Helpline</p><p class="r-org">United Way · Nationwide</p></div>
+        </div>
+        <p class="r-desc">Dial 211 from any phone to reach local housing, food, and utility assistance. Works for families even if the veteran can't make the call.</p>
+        <div class="r-tags"><span class="tag t-fam">Families</span><span class="tag t-free">Free</span><span class="tag t-24h">24/7</span></div>
+        <div class="r-cta">
+          <a class="r-link" href="https://www.211.org" target="_blank" rel="noopener" onclick="event.stopPropagation()">211.org ↗</a>
+          <button class="tips-btn">Tips &amp; Guide</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<div class="flag-divider" aria-hidden="true"></div>
+<footer class="page-footer">
+  <div class="pf-brand">
+    <img src="HBH_LOGO.jpg" alt="HonorBound Heroes" class="pf-brand-logo">
+    <span class="pf-brand-name">HonorBound Heroes</span>
+    <p>Serving homeless veterans with compassion, urgency, and respect. No one who served should face homelessness alone.</p>
+  </div>
+  <div class="pf-col">
+    <h4>Navigate</h4>
+    <a href="index.html#mission">Our Mission</a>
+    <a href="index.html#how">Our Work</a>
+    <a href="index.html#story">Our Story</a>
+    <a href="veteran-housing-resources.html">Housing Resources</a>
+    <a href="index.html#involved">Get Involved</a>
+  </div>
+  <div class="pf-col">
+    <h4>Connect</h4>
+    <a href="https://www.facebook.com/honorbounheroes" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/honorboundheroes/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@honorbound2024" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://givebutter.com/HonorBound" target="_blank" rel="noopener">Donate via GiveButter</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  © 2024–2026 HonorBound Heroes · 501(c)(3) Nonprofit · EIN 99-1356980 · Remus, MI (Mecosta County) ·
+  <a href="https://www.honorboundheroes.com/terms">Terms</a> · <a href="https://www.honorboundheroes.com/new-page">Privacy</a>
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeOnOverlay(event)">
+  <div class="modal" id="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-hdr">
+      <img src="HBH_LOGO.jpg" alt="HonorBound Heroes" class="modal-hdr-logo">
+      <div class="modal-hdr-left">
+        <h2 id="modal-title"></h2>
+        <p id="modal-org"></p>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">&#x2715;</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+    <div class="modal-ftr">
+      <a id="modal-link" href="#" target="_blank" rel="noopener" class="modal-ftr-link">Visit Official Site ↗</a>
+      <p class="modal-ftr-note">All programs free to veterans · Verified June 2026</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const D = {
+  hudvash:{title:'HUD-VASH',org:'HUD + Department of Veterans Affairs',link:'https://www.va.gov/homeless/hud-vash.asp',
+    have:['DD-214 (Certificate of Release or Discharge from Active Duty) — the single most important document','Proof of homelessness: shelter letter, caseworker statement, or self-certification','Photo ID — state ID or driver\'s license','Social Security card or number','Any income documentation: disability award letters, SSI/SSDI, pay stubs','Medical records if you have a VA disability rating'],
+    nav:['Contact your local VA Medical Center (VAMC) and ask specifically for a HUD-VASH coordinator — not general intake','You must be enrolled in VA healthcare first. If you aren\'t, do that at the same appointment','HUD-VASH has waitlists in most areas — get on the list immediately, even without all documents ready','The voucher goes through your local Public Housing Authority (PHA), not the VA directly. Once approved, you find housing that accepts Section 8','Ask the PHA for a list of landlords who already accept HUD-VASH — landlord acceptance is the main obstacle','Non-honorable discharge? Ask specifically about the Other Than Honorable (OTH) policy — you may still qualify depending on circumstances'],
+    alert:'Discharge status matters but does not automatically disqualify you. A less-than-honorable discharge can sometimes be reviewed on a case-by-case basis. Ask a VA social worker or legal aid attorney before assuming you\'re ineligible.'},
+  gpd:{title:'Grant & Per Diem (GPD)',org:'VA Homeless Programs Office',link:'https://www.va.gov/homeless/gpd.asp',
+    have:['DD-214 or other military service documentation','Photo ID','Proof of homelessness or at-risk housing status','Social Security number','Any VA healthcare enrollment paperwork if you have it'],
+    nav:['GPD does not operate directly — it funds LOCAL nonprofits. Use the provider locator at va.gov/homeless/gpd to find organizations in your area','Call each provider directly. Each has its own intake process, eligibility rules, and waitlist','Some GPD providers offer low-demand bridge housing; others are service-intensive. Ask which type before applying','Length of stay varies by provider, typically 6 months to 2 years. Ask upfront so you can plan','GPD is often a bridge to HUD-VASH. Ask your case manager to help you apply for a voucher during your stay'],
+    alert:'GPD providers vary significantly in quality and availability by location. If one provider has a long waitlist, call the next one immediately. Don\'t stop at one call.'},
+  voa:{title:'Volunteers of America',org:'National nonprofit · 300+ locations',link:'https://www.voa.org/veterans',
+    have:['DD-214 or military service documentation','Photo ID','Social Security number','Proof of income or documentation of no income','Any VA benefits award letters if applicable'],
+    nav:['Go to voa.org and use the location finder to find the nearest VOA office serving veterans','VOA operates emergency shelter, transitional housing, and permanent supportive housing — be specific about which you need','VOA often has beds available faster than VA-direct programs — call and ask about same-week placement','VOA case managers can help you apply for HUD-VASH and SSVF simultaneously while you\'re in their housing — take them up on this','If the local office isn\'t responsive, call the national veterans line: 1-800-899-0089'],
+    alert:'VOA is faith-based but does not require religious participation. Services are open to all veterans regardless of background, beliefs, or discharge status.'},
+  ssvf:{title:'SSVF — Supportive Services for Veteran Families',org:'VA · Nationwide grantee network',link:'https://www.va.gov/homeless/ssvf/',
+    have:['DD-214 — required without exception','Proof of income below 50% of Area Median Income (AMI): pay stubs, award letters, or a statement of no income','Current lease or eviction notice (for prevention) OR documentation of homelessness (for rapid rehousing)','Photo ID for all adult household members','Social Security numbers for all household members','Utility bills in your name if applying for utility assistance'],
+    nav:['SSVF has two tracks — homelessness PREVENTION (you\'re about to lose housing) and rapid REHOUSING (you\'re already homeless). Know which you need before you call','Find local SSVF grantees at va.gov/homeless/ssvf — 200+ organizations nationally','SSVF can pay security deposits, back rent, and utilities — ask specifically what your local grantee covers, it varies','Time is critical: SSVF funding runs out. Call as early as possible — don\'t wait until eviction is final','If you have children, mention it immediately. SSVF programs often prioritize families','Use the full case management: SSVF workers can also connect you to VA healthcare, benefits, and job training'],
+    alert:'Income limits are strict — below 50% of your area\'s median income. If you\'re above that, ask anyway. Some programs have flexibility for extenuating circumstances, especially families with children.'},
+  nchv:{title:'NCHV — National Coalition for Homeless Veterans',org:'National advocacy + provider network',link:'https://nchv.org',
+    have:['Your location (city and state minimum)','Description of your situation and what type of help you need','DD-214 if you have it — not always required to use the locator'],
+    nav:['NCHV maintains one of the most comprehensive national directories of veteran housing providers — use the resource locator at nchv.org to find providers in your state','NCHV is an advocacy organization, not a direct service provider. Use them to find the right local organization, then contact that organization directly','NCHV is also an escalation path — if you\'re being denied services you believe you qualify for, they can point you to advocacy resources','For families: NCHV has specific resources for veterans with children — filter the directory accordingly','Follow up with every organization you find. NCHV listings don\'t always reflect current capacity or waitlists'],
+    alert:'NCHV is a navigation and advocacy tool. Use it to find the right local provider, then contact that provider directly — NCHV does not place veterans in housing itself.'},
+  soldieron:{title:'Soldier On',org:'National nonprofit · Peer-support model',link:'https://www.wesoldieron.org',
+    have:['DD-214 or proof of military service','Photo ID','Documentation of homelessness or housing instability','Any VA enrollment or benefits documentation you have'],
+    nav:['Soldier On primarily operates in the Northeast — check their website for current locations before assuming they serve your area','Their model is peer-driven: veterans in stable housing mentor veterans in crisis. Be open to this — it\'s a feature, not an obstacle','Apply through their website or by calling their main intake line','Soldier On also offers employment services within their communities — ask about job training during the intake call','If they don\'t serve your region, ask them to refer you to a comparable peer-support program — they usually know who else is doing this work'],
+    alert:'Soldier On\'s peer model works best for veterans willing to engage with the community aspect. If you prefer a more independent setting, HUD-VASH or SSVF may be a better fit.'},
+  vba:{title:'Veterans Benefits Administration',org:'U.S. Department of Veterans Affairs',link:'https://www.va.gov',
+    have:['DD-214 — the foundation of any VA benefits claim','Medical records showing a diagnosis connected to your service','Buddy statements: written accounts from fellow service members who witnessed your injury or condition','Private medical opinions if you have them — these carry significant weight in claims','Social Security number and direct deposit information for when you\'re approved'],
+    nav:['File as early as possible. Your effective date is typically the date you file — every day you delay is potentially lost back-pay','Use a VA-accredited claims agent or Veterans Service Organization (VSO) like VFW, DAV, or American Legion — they\'re free and significantly improve your odds','Never go to a claims hearing alone if you can avoid it. Bring a VSO representative','Denied? Appeal immediately. Most first-time claims are denied. The path: Supplemental Claim → Board of Veterans Appeals → Court of Appeals','If you\'re homeless, tell the VA — you qualify for priority processing. Say "I am experiencing homelessness" explicitly in writing','Pension (for wartime veterans with low income) and compensation (service-connected disability) are different programs — you may qualify for one or both'],
+    alert:'Discharge upgrades can unlock benefits you\'ve been denied. If you have a less-than-honorable discharge, contact a legal aid organization BEFORE assuming you\'re ineligible for VA benefits.'},
+  lsc:{title:'Legal Services Corporation — Veteran Access',org:'Federal nonprofit · Legal aid network',link:'https://www.lsc.gov/about-lsc/what-legal-aid/veteran-resources',
+    have:['All documentation related to your legal issue: eviction notice, lease, denial letters, discharge papers','DD-214 and any military service records','Income documentation — LSC serves low-income individuals','A one-page written summary of your situation — attorneys have limited time and this helps enormously','Any court dates or legal deadlines — bring these immediately, missed deadlines can be fatal to a case'],
+    nav:['Go to lsc.gov and use the "Find Legal Aid" locator. Enter your zip code to find the nearest LSC-funded office','Call and explicitly say you are a veteran and describe your legal need — many offices have veteran priority intake','LSC handles eviction defense, VA benefits appeals, and discharge upgrades — all three directly affect housing access','Discharge upgrades are underused: if your discharge was other than honorable, an upgrade can restore access to VA housing programs. Start this process now — it takes time','If the local office has a long wait, ask if they have a self-help clinic or can refer you to a law school veterans clinic','For eviction defense: contact LSC the day you receive a notice, not after court dates are scheduled'],
+    alert:'Discharge status is the most underrated barrier to veteran housing. A less-than-honorable discharge can block HUD-VASH, SSVF, and VA healthcare. Legal aid can sometimes fix this — the call is worth making.'},
+  pcafc:{title:'PCAFC — Program of Comprehensive Assistance for Family Caregivers',org:'VA Caregiver Support Program',link:'https://www.caregiver.va.gov',
+    have:['Veteran\'s DD-214 and VA file number','Documentation that the veteran served on or after 9/11 — PCAFC requirement','Medical documentation of the veteran\'s serious injury or illness','Proof of your relationship to the veteran: marriage certificate, birth certificate, legal guardianship','Your own ID and Social Security number','A written log of daily care tasks you perform — this helps enormously during the assessment'],
+    nav:['Apply through the VA Caregiver Support Program website or call 1-855-260-3274','The veteran must be enrolled in VA healthcare before you can apply','A VA Caregiver Support Coordinator will be assigned — contact them directly, not a general VA line','PCAFC requires an in-home assessment. Be thorough: document every activity of daily living you assist with (bathing, mobility, medications, meals)','If denied, appeal. The appeals process was overhauled in 2023 and many previously denied caregivers have been approved on appeal','The monthly stipend is tiered (Tier 1, 2, or 3) based on care level. Be honest and complete during the assessment'],
+    alert:'PCAFC is for post-9/11 veterans only. If the veteran served before 9/11, ask about the Program of General Caregiver Support Services (PGCSS) — fewer financial benefits but still provides meaningful support.'},
+  '211':{title:'211 Helpline',org:'United Way · Nationwide',link:'https://www.211.org',
+    have:['Your current location — city and zip code','A clear, specific description of your immediate need ("I need emergency shelter tonight" is more actionable than "I need help")','Names of anyone else in your household, especially children or elderly — this affects what resources they can offer','Any time-sensitive constraints: court dates, eviction deadlines, utility shutoff notices'],
+    nav:['Dial 211 from any phone — free, even from a cell phone with no active plan in most states','Available 24/7 in most areas. If coverage isn\'t 24/7 in your area, call during business hours for the most complete help','Tell the operator you are a veteran — this unlocks veteran-specific referrals in their database','Ask the operator to conference you into the first referral if you have difficulty navigating phone systems','211 connects to emergency shelter, food banks, utility shutoff prevention, and transportation — don\'t limit the conversation to housing','You can also text your zip code to 898-211 in most areas if you cannot make a voice call'],
+    alert:'211 is a referral service, not a direct provider. If the first referral doesn\'t work out, call 211 again and ask for alternatives — they have multiple listings per category.'}
+};
+
+function openModal(id) {
+  const d = D[id]; if (!d) return;
+  document.getElementById('modal-title').textContent = d.title;
+  document.getElementById('modal-org').textContent = d.org;
+  document.getElementById('modal-link').href = d.link;
+  let html = '<div class="modal-section"><p class="modal-section-title">What to have ready before you call</p><ul>';
+  d.have.forEach(i => { html += `<li>${i}</li>`; });
+  html += '</ul></div><div class="modal-section"><p class="modal-section-title">How to navigate this program</p><ul>';
+  d.nav.forEach(i => { html += `<li>${i}</li>`; });
+  html += '</ul></div>';
+  if (d.alert) html += `<div class="modal-alert">${d.alert}</div>`;
+  document.getElementById('modal-body').innerHTML = html;
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeOnOverlay(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModal();
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+document.querySelectorAll('.r-card').forEach(c => {
+  c.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.click(); } });
+});
+</script>
+</body>
+</html>
