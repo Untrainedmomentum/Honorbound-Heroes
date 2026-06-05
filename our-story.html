@@ -26,7 +26,7 @@
     "@type": "NGO",
     "name": "HonorBound Heroes",
     "taxID": "99-1356980",
-    "founder": {"@type": "Person", "name": "John McAllister", "jobTitle": "Executive Director"},
+    "founder": {"@type": "Person", "name": "John McAllister", "jobTitle": "President"},
     "address": {"@type": "PostalAddress", "addressLocality": "Remus", "addressRegion": "MI", "addressCountry": "US"}
   }
 }
@@ -171,6 +171,18 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
   .site-footer { grid-template-columns: 1fr; padding: 2rem 1.5rem; }
   .page-hero { padding: 2.5rem 1.5rem 2rem; }
 }
+
+/* Board grid */
+.board-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+.board-card { background: var(--navy-mid); border: 1px solid var(--border-subtle); border-top: 3px solid var(--red); border-radius: 4px; overflow: hidden; text-align: center; }
+.board-photo { width: 100%; height: 200px; object-fit: cover; object-position: center top; display: block; }
+.board-initials { width: 100%; height: 140px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--red); background: rgba(178,34,52,0.08); }
+.board-card-body { padding: 1.25rem 1.5rem 1.5rem; }
+.board-card h4 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.board-role { font-size: 0.72rem; color: var(--red); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
+.board-card p { font-size: 0.84rem; color: #8a9bb5; line-height: 1.65; }
+@media (max-width: 768px) { .board-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .board-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -263,10 +275,10 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
 
     <div>
       <div class="john-card">
-        <img src="john-mcallister.jpg" alt="John McAllister, Executive Director of HonorBound Heroes" class="john-photo">
+        <img src="john-mcallister.jpg" alt="John McAllister, President of HonorBound Heroes" class="john-photo">
         <div class="john-card-body">
           <h4>John McAllister</h4>
-          <div class="role">Founder &amp; Executive Director</div>
+          <div class="role">Founder &amp; President</div>
           <p>John has kept the HonorBound flame alive through the organization's most difficult stretch. His refusal to quit is the foundation everything is being rebuilt on.</p>
         </div>
       </div>
@@ -320,6 +332,56 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
         <li>Long-term community presence</li>
       </ul>
     </div>
+  </div>
+
+  <!-- BOARD OF DIRECTORS -->
+  <hr class="section-divider">
+  <div class="how-header">
+    <div class="section-label">Board of Directors</div>
+    <h2 class="section-title">The people behind the mission.</h2>
+    <p style="color:#b0bfcf;font-weight:300;line-height:1.8;max-width:600px;margin-bottom:2.5rem">HonorBound Heroes is governed by a founding board of directors committed to ending veteran homelessness. Board composition and roles may evolve as the organization grows.</p>
+  </div>
+
+  <div class="board-grid">
+    <div class="board-card">
+      <img src="john-mcallister.jpg" alt="John McAllister" class="board-photo">
+      <div class="board-card-body">
+        <h4>John McAllister</h4>
+        <div class="board-role">President</div>
+        <p>Founder of HonorBound Heroes and the driving force behind its rebuild. John has kept this organization alive through its most difficult stretch on nothing but commitment to the mission.</p>
+      </div>
+    </div>
+
+    <div class="board-card">
+      <div class="board-initials">DM</div>
+      <div class="board-card-body">
+        <h4>Dusty McAllister</h4>
+        <div class="board-role">Vice President</div>
+        <p>Vice President of the Board and a key pillar of HonorBound Heroes' leadership. Dusty brings dedication to the mission and serves as the President's primary backup and successor.</p>
+      </div>
+    </div>
+
+    <div class="board-card">
+      <div class="board-initials">JB</div>
+      <div class="board-card-body">
+        <h4>Jennifer Bryneelsenfovozzo</h4>
+        <div class="board-role">Treasurer</div>
+        <p>IT professional and technology advisor to HonorBound Heroes. Jennifer brings technical expertise and operational discipline to the board's financial oversight responsibilities.</p>
+      </div>
+    </div>
+
+    <div class="board-card">
+      <div class="board-initials">MS</div>
+      <div class="board-card-body">
+        <h4>Mike Smith</h4>
+        <div class="board-role">Secretary · U.S. Marine Corps</div>
+        <p>United States Marine Corps veteran and Secretary of the Board. Mike brings firsthand military experience and a veteran's perspective to HonorBound Heroes' mission and governance.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:2rem;padding:1.25rem 1.5rem;background:rgba(178,34,52,0.06);border-left:3px solid var(--red);border-radius:0 3px 3px 0;">
+    <p style="font-size:0.88rem;color:#8a9bb5;line-height:1.65">Interested in joining our board? We are actively recruiting additional members with backgrounds in nonprofit governance, legal, finance, healthcare, and community organizing. <a href="get-involved.html" style="color:var(--red)">Apply here →</a></p>
   </div>
 
   <div class="cta-row">
