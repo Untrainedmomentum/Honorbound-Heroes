@@ -3,10 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Get Involved — HonorBound Heroes</title>
+
+<!-- ═══════════════════════════════════════════════
+     PRIMARY SEO META
+════════════════════════════════════════════════ -->
+<title>Get Involved — Volunteer or Join the Board | HonorBound Heroes</title>
+<meta name="description" content="Volunteer with HonorBound Heroes or join our board of directors. Help end veteran homelessness in Michigan and beyond. 501(c)(3) nonprofit, EIN 99-1356980, Remus, MI.">
+<meta name="keywords" content="volunteer veteran nonprofit Michigan, join nonprofit board Michigan, HonorBound Heroes volunteer, veteran charity volunteer, nonprofit board of directors Michigan, Mecosta County volunteer">
+<meta name="author" content="HonorBound Heroes">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.honorboundheroes.com/get-involved.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.honorboundheroes.com/get-involved.html">
+<meta property="og:title" content="Get Involved — Volunteer or Join the Board | HonorBound Heroes">
+<meta property="og:description" content="Volunteer your time or help lead HonorBound Heroes as a board member. Every hour and skill helps end veteran homelessness.">
+<meta property="og:image" content="https://www.honorboundheroes.com/HBH_LOGO.jpg">
+<meta property="og:site_name" content="HonorBound Heroes">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Get Involved — HonorBound Heroes">
+<meta name="twitter:description" content="Volunteer or join our board. Help end veteran homelessness. Remus, MI.">
+<meta name="twitter:image" content="https://www.honorboundheroes.com/HBH_LOGO.jpg">
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Get Involved — HonorBound Heroes",
+  "description": "Volunteer or join the board of directors of HonorBound Heroes, a 501(c)(3) nonprofit ending veteran homelessness.",
+  "url": "https://www.honorboundheroes.com/get-involved.html",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.honorboundheroes.com/"},
+      {"@type":"ListItem","position":2,"name":"Get Involved","item":"https://www.honorboundheroes.com/get-involved.html"}
+    ]
+  },
+  "publisher": {
+    "@type": "NGO",
+    "name": "HonorBound Heroes",
+    "url": "https://www.honorboundheroes.com",
+    "logo": "https://www.honorboundheroes.com/HBH_LOGO.jpg",
+    "taxID": "99-1356980",
+    "nonprofitStatus": "Nonprofit501c3",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Remus",
+      "addressRegion": "MI",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -19,9 +76,9 @@
     --off-white: #EEF1F7;
     --text-muted: #7a8fa8;
     --border: rgba(255,255,255,0.1);
+    --border-subtle: rgba(255,255,255,0.06);
     --input-bg: rgba(255,255,255,0.05);
     --input-border: rgba(255,255,255,0.15);
-    --input-focus: rgba(178,34,52,0.5);
   }
 
   html { scroll-behavior: smooth; }
@@ -32,156 +89,163 @@
     color: var(--off-white);
     line-height: 1.6;
     font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  /* ── FLAG BAR ── */
+  .flag-bar {
+    height: 4px;
+    background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, var(--white) 33%, var(--white) 66%, #0A3577 66%, #0A3577 100%);
   }
 
   /* ── NAV ── */
   nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.1rem 3rem;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.6rem 3rem;
     background: rgba(11,31,58,0.98);
     border-bottom: 1px solid rgba(255,255,255,0.08);
+    gap: 1.5rem;
   }
 
-  .nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--white);
-    text-decoration: none;
-  }
+  .nav-logo-wrap { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; flex-shrink: 0; }
+  .nav-logo-img { width: 44px; height: 44px; object-fit: contain; border-radius: 50%; background: #fff; padding: 2px; }
+  .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--white); display: block; line-height: 1.15; }
+  .nav-logo-tagline { font-family: 'Barlow', sans-serif; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.08em; color: var(--text-muted); text-transform: uppercase; display: block; }
 
-  .nav-back {
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: color 0.2s;
+  .nav-links { display: flex; gap: 0; list-style: none; align-items: center; }
+  .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color .2s; padding: 0 0.85rem; }
+  .nav-links a:hover { color: var(--white); }
+
+  .nav-dropdown { position: relative; }
+  .nav-dropdown-trigger {
+    background: none; border: none; cursor: pointer;
+    color: var(--text-muted); font-family: 'Barlow', sans-serif;
+    font-size: 0.82rem; font-weight: 500; letter-spacing: 0.04em;
+    text-transform: uppercase; padding: 0 0.85rem;
+    display: flex; align-items: center; gap: 4px;
+    transition: color .2s;
   }
-  .nav-back:hover { color: var(--white); }
+  .nav-dropdown-trigger:hover { color: var(--white); }
+  .nav-dropdown-trigger svg { width: 10px; height: 10px; transition: transform .2s; }
+  .nav-dropdown:hover .nav-dropdown-trigger svg { transform: rotate(180deg); }
+
+  .nav-dropdown-menu {
+    position: absolute; top: calc(100% + 8px); left: 0;
+    background: var(--navy-mid);
+    border: 1px solid rgba(178,34,52,.3);
+    border-top: 2px solid var(--red);
+    min-width: 200px;
+    opacity: 0; visibility: hidden;
+    transform: translateY(-6px);
+    transition: all .18s ease; z-index: 200;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .dropdown-section-lbl { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--red); padding: .55rem 1rem .25rem; }
+  .nav-dropdown-menu a { display: flex; align-items: center; gap: 8px; padding: .5rem 1rem; font-size: 13px; color: rgba(255,255,255,.75); text-decoration: none; transition: background .12s; text-transform: none; letter-spacing: 0; }
+  .nav-dropdown-menu a:hover { background: rgba(178,34,52,.12); color: #fff; }
+  .nav-dropdown-menu .ddot { width: 5px; height: 5px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+
+  .nav-cta {
+    background: var(--red); color: var(--white) !important;
+    padding: 0.5rem 1.4rem !important; border-radius: 2px;
+    font-weight: 600 !important; font-size: 0.8rem !important;
+    letter-spacing: 0.06em !important; text-transform: uppercase;
+    text-decoration: none; transition: background .2s;
+    flex-shrink: 0; white-space: nowrap;
+  }
+  .nav-cta:hover { background: var(--red-dark) !important; }
 
   /* ── PAGE HEADER ── */
   .page-header {
-    padding: 4rem 3rem 3rem;
-    border-bottom: 1px solid var(--border);
-    max-width: 900px;
-    margin: 0 auto;
+    background: var(--navy-mid);
+    border-bottom: 3px solid var(--red);
+    padding: 3.5rem 3rem 0;
+    position: relative; overflow: hidden;
   }
 
+  .page-header-watermark {
+    position: absolute; right: 3rem; top: 50%;
+    transform: translateY(-50%);
+    width: 220px; height: 220px;
+    object-fit: contain; opacity: 0.05;
+    pointer-events: none; filter: brightness(10);
+  }
+
+  .page-header-inner { max-width: 900px; margin: 0 auto; }
+
+  .breadcrumb {
+    font-size: 0.75rem; color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .breadcrumb a { color: var(--text-muted); text-decoration: none; transition: color .15s; }
+  .breadcrumb a:hover { color: var(--white); }
+  .breadcrumb span { color: rgba(255,255,255,.25); }
+
   .page-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--red);
-    margin-bottom: 0.8rem;
+    font-size: 0.75rem; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--red); margin-bottom: 0.8rem;
   }
 
   .page-header h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 1rem;
+    font-weight: 700; line-height: 1.1; margin-bottom: 1rem;
   }
 
   .page-header p {
-    color: var(--text-muted);
-    max-width: 560px;
-    font-weight: 300;
-    line-height: 1.75;
+    color: var(--text-muted); max-width: 560px;
+    font-weight: 300; line-height: 1.75; margin-bottom: 0;
   }
 
   /* ── TAB NAV ── */
   .tab-nav {
-    display: flex;
-    gap: 0;
-    max-width: 900px;
-    margin: 2.5rem auto 0;
-    border-bottom: 1px solid var(--border);
+    display: flex; gap: 0;
+    max-width: 900px; margin: 2rem auto 0;
+    border-bottom: none;
   }
 
   .tab-btn {
-    background: none;
-    border: none;
+    background: none; border: none;
     padding: 1rem 2rem;
     font-family: 'Barlow', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    cursor: pointer;
+    font-size: 0.88rem; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--text-muted); cursor: pointer;
     border-bottom: 2px solid transparent;
-    margin-bottom: -1px;
+    margin-bottom: 0;
     transition: color 0.2s, border-color 0.2s;
   }
-
   .tab-btn:hover { color: var(--off-white); }
   .tab-btn.active { color: var(--white); border-bottom-color: var(--red); }
 
-  /* ── FORM PANELS ── */
-  .forms-area {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 3rem;
-  }
+  /* ── FORMS AREA ── */
+  .forms-area { max-width: 900px; margin: 0 auto; padding: 3rem; }
 
   .form-panel { display: none; }
   .form-panel.active { display: block; }
 
   .form-intro {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.5rem; padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-subtle);
   }
-
-  .form-intro h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .form-intro p {
-    color: var(--text-muted);
-    font-weight: 300;
-    line-height: 1.7;
-    font-size: 0.95rem;
-  }
+  .form-intro h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 0.5rem; }
+  .form-intro p { color: var(--text-muted); font-weight: 300; line-height: 1.7; font-size: 0.95rem; }
 
   /* ── FORM ELEMENTS ── */
-  .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25rem;
-  }
-
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
   .form-group.full { grid-column: 1 / -1; }
 
   label {
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    font-size: 0.78rem; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
     color: var(--text-muted);
   }
-
   label .optional {
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: 0;
-    color: rgba(122,143,168,0.6);
-    font-size: 0.75rem;
-    margin-left: 0.3rem;
+    font-weight: 400; text-transform: none; letter-spacing: 0;
+    color: rgba(122,143,168,0.6); font-size: 0.72rem; margin-left: 0.3rem;
   }
 
   input[type="text"],
@@ -191,183 +255,184 @@
   textarea {
     background: var(--input-bg);
     border: 1px solid var(--input-border);
-    border-radius: 3px;
-    padding: 0.75rem 1rem;
+    border-radius: 3px; padding: 0.75rem 1rem;
     color: var(--white);
     font-family: 'Barlow', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 400;
-    width: 100%;
-    transition: border-color 0.2s, background 0.2s;
-    outline: none;
-    appearance: none;
+    font-size: 0.95rem; font-weight: 400;
+    width: 100%; transition: border-color 0.2s, background 0.2s;
+    outline: none; appearance: none;
   }
-
   input:focus, select:focus, textarea:focus {
     border-color: var(--red);
     background: rgba(255,255,255,0.08);
   }
-
-  input::placeholder, textarea::placeholder {
-    color: rgba(122,143,168,0.5);
-  }
+  input::placeholder, textarea::placeholder { color: rgba(122,143,168,0.5); }
 
   select {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a8fa8' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 1rem center;
-    padding-right: 2.5rem;
-    cursor: pointer;
+    background-repeat: no-repeat; background-position: right 1rem center;
+    padding-right: 2.5rem; cursor: pointer;
   }
-
   select option { background: var(--navy-mid); color: var(--white); }
-
   textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
 
   /* ── CHECKBOXES ── */
   .check-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    margin-bottom: 0.75rem;
-    display: block;
+    font-size: 0.78rem; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 0.75rem; display: block;
   }
-
-  .check-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 0.6rem;
-  }
-
-  .check-item {
-    display: flex;
-    align-items: center;
-    gap: 0.65rem;
-    cursor: pointer;
-  }
-
+  .check-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.6rem; }
+  .check-item { display: flex; align-items: center; gap: 0.65rem; cursor: pointer; }
   .check-item input[type="checkbox"] {
-    width: 17px;
-    height: 17px;
-    min-width: 17px;
-    border-radius: 2px;
-    border: 1px solid var(--input-border);
-    background: var(--input-bg);
-    appearance: none;
-    cursor: pointer;
-    transition: background 0.15s, border-color 0.15s;
+    width: 17px; height: 17px; min-width: 17px;
+    border-radius: 2px; border: 1px solid var(--input-border);
+    background: var(--input-bg); appearance: none;
+    cursor: pointer; transition: background 0.15s, border-color 0.15s;
     position: relative;
   }
-
-  .check-item input[type="checkbox"]:checked {
-    background: var(--red);
-    border-color: var(--red);
-  }
-
+  .check-item input[type="checkbox"]:checked { background: var(--red); border-color: var(--red); }
   .check-item input[type="checkbox"]:checked::after {
-    content: '';
-    position: absolute;
-    left: 4px; top: 1px;
-    width: 5px; height: 9px;
-    border: 2px solid white;
-    border-top: none;
-    border-left: none;
+    content: ''; position: absolute;
+    left: 4px; top: 1px; width: 5px; height: 9px;
+    border: 2px solid white; border-top: none; border-left: none;
     transform: rotate(45deg);
   }
-
-  .check-item span {
-    font-size: 0.9rem;
-    color: var(--off-white);
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: 0;
-  }
+  .check-item span { font-size: 0.9rem; color: var(--off-white); font-weight: 400; text-transform: none; letter-spacing: 0; }
 
   /* ── SUBMIT ── */
   .form-footer {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
+    margin-top: 2rem; display: flex;
+    align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+    padding-top: 2rem; border-top: 1px solid var(--border-subtle);
   }
-
-  .form-note {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    font-weight: 300;
-    max-width: 420px;
-    line-height: 1.5;
-  }
+  .form-note { font-size: 0.82rem; color: var(--text-muted); font-weight: 300; max-width: 420px; line-height: 1.5; }
 
   .btn-submit {
-    background: var(--red);
-    color: var(--white);
-    border: none;
+    background: var(--red); color: var(--white); border: none;
     padding: 0.9rem 2.5rem;
     font-family: 'Barlow', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    border-radius: 2px;
-    cursor: pointer;
+    font-size: 0.9rem; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    border-radius: 2px; cursor: pointer;
     transition: background 0.2s, transform 0.15s;
   }
   .btn-submit:hover { background: var(--red-dark); transform: translateY(-1px); }
 
-  /* ── FLAG STRIPE ── */
-  .flag-bar {
-    height: 4px;
-    background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, var(--white) 33%, var(--white) 66%, #0A3577 66%, #0A3577 100%);
+  /* ── SUCCESS STATE ── */
+  .success-msg {
+    display: none;
+    background: rgba(30,140,80,.08);
+    border: 1px solid rgba(30,140,80,.25);
+    border-left: 3px solid #3ecf80;
+    border-radius: 3px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #7ae8b0;
+    line-height: 1.6;
   }
+  .success-msg.visible { display: block; }
+
+  /* ── FOOTER ── */
+  .page-footer {
+    background: rgba(0,0,0,.4);
+    border-top: 1px solid var(--border-subtle);
+    padding: 2.5rem 3rem;
+    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem;
+    margin-top: 3rem;
+  }
+  .pf-brand-logo { width: 56px; height: 56px; object-fit: contain; background: #fff; border-radius: 50%; padding: 3px; margin-bottom: 0.85rem; display: block; }
+  .pf-brand-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--white); display: block; margin-bottom: 0.5rem; }
+  .pf-brand p { font-size: 0.85rem; color: #6a7a8a; line-height: 1.7; max-width: 260px; }
+  .pf-col h4 { font-size: 0.75rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.9rem; }
+  .pf-col a { display: block; color: #6a7a8a; text-decoration: none; font-size: 0.88rem; margin-bottom: 0.45rem; transition: color .2s; }
+  .pf-col a:hover { color: var(--white); }
+  .footer-bottom { text-align: center; padding: 1.1rem 3rem; font-size: 0.78rem; color: #4a5a6a; border-top: 1px solid rgba(255,255,255,.04); }
+  .footer-bottom a { color: #4a5a6a; }
 
   @media (max-width: 680px) {
-    nav { padding: 1rem 1.5rem; }
-    .page-header { padding: 2.5rem 1.5rem 2rem; }
+    nav { padding: 0.6rem 1.2rem; }
+    .nav-links { display: none; }
+    .page-header { padding: 2.5rem 1.5rem 0; }
     .tab-btn { padding: 0.75rem 1.25rem; font-size: 0.8rem; }
     .forms-area { padding: 2rem 1.5rem; }
     .form-grid { grid-template-columns: 1fr; }
     .form-group.full { grid-column: 1; }
+    .page-footer { grid-template-columns: 1fr; padding: 2rem 1.5rem; }
+    .page-header-watermark { display: none; }
   }
 </style>
 </head>
 <body>
 
-<div class="flag-bar"></div>
+<div class="flag-bar" aria-hidden="true"></div>
 
-<nav>
-  <a href="index.html" class="nav-logo">HonorBound Heroes</a>
-  <a href="index.html" class="nav-back">← Back to Site</a>
+<!-- NAV -->
+<nav aria-label="Main navigation">
+  <a href="index.html" class="nav-logo-wrap" aria-label="HonorBound Heroes home">
+    <img src="HBH_LOGO.jpg" alt="HonorBound Heroes Logo" class="nav-logo-img">
+    <div>
+      <span class="nav-logo-text">HonorBound Heroes</span>
+      <span class="nav-logo-tagline">Where compassion meets commitment</span>
+    </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html#mission">Mission</a></li>
+    <li><a href="index.html#how">Our Work</a></li>
+    <li><a href="index.html#story">Our Story</a></li>
+    <li class="nav-dropdown">
+      <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+        Resources
+        <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="1,3 5,7 9,3"/></svg>
+      </button>
+      <div class="nav-dropdown-menu" role="menu">
+        <p class="dropdown-section-lbl">By Topic</p>
+        <a href="veteran-housing-resources.html" role="menuitem"><span class="ddot"></span>Housing &amp; Homelessness</a>
+      </div>
+    </li>
+    <li><a href="get-involved.html" style="color:var(--white)">Get Involved</a></li>
+    <li><a href="get-involved.html#board">Join the Board</a></li>
+  </ul>
+
+  <a href="https://givebutter.com/HonorBound" class="nav-cta" target="_blank" rel="noopener">Donate Now</a>
 </nav>
 
+<!-- PAGE HEADER -->
 <div class="page-header">
-  <div class="page-label">Join the Mission</div>
-  <h1>Get Involved</h1>
-  <p>Whether you want to volunteer your time or help lead this organization as a board member, we want to hear from you. Fill out the form below and we'll be in touch.</p>
+  <img src="HBH_LOGO.jpg" alt="" class="page-header-watermark" aria-hidden="true">
+  <div class="page-header-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Get Involved</span>
+    </nav>
+    <div class="page-label">Join the Mission</div>
+    <h1>Get Involved</h1>
+    <p>Whether you want to volunteer your time or help lead this organization as a board member, we want to hear from you. Fill out the form below and we'll be in touch.</p>
+  </div>
+
+  <div class="page-header-inner">
+    <div class="tab-nav" role="tablist">
+      <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-volunteer" onclick="switchTab('volunteer', this)">Volunteer</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-board" id="board" onclick="switchTab('board', this)">Join the Board</button>
+    </div>
+  </div>
 </div>
 
-<div class="tab-nav">
-  <button class="tab-btn active" onclick="switchTab('volunteer', this)">Volunteer</button>
-  <button class="tab-btn" onclick="switchTab('board', this)">Join the Board</button>
-</div>
-
+<!-- FORMS -->
 <div class="forms-area">
 
-  <!-- ── VOLUNTEER FORM ── -->
-  <div class="form-panel active" id="panel-volunteer">
+  <!-- VOLUNTEER -->
+  <div class="form-panel active" id="panel-volunteer" role="tabpanel">
     <div class="form-intro">
       <h2>Volunteer with Us</h2>
-      <p>We need people on the ground — at care kit drives, outreach events, and behind the scenes. All backgrounds and skill levels are welcome. Tell us a little about yourself and how you'd like to help.</p>
+      <p>We need people on the ground — at care kit drives, outreach events, and behind the scenes. All backgrounds and skill levels welcome. Tell us a little about yourself and how you'd like to help.</p>
     </div>
 
-    <form action="https://formspree.io/f/xrevbewk" method="POST">
-
+    <form id="form-volunteer" action="https://formspree.io/f/xrevbewk" method="POST">
       <div class="form-grid">
 
         <div class="form-group">
@@ -397,11 +462,11 @@
         </div>
 
         <div class="form-group full">
-          <span class="check-label">Areas You'd Like to Help With <span class="optional" style="text-transform:none; letter-spacing:0; font-size:0.75rem;">(check all that apply)</span></span>
+          <span class="check-label">Areas You'd Like to Help With <span style="text-transform:none;letter-spacing:0;font-size:0.72rem;font-weight:400;color:rgba(122,143,168,0.6)">(check all that apply)</span></span>
           <div class="check-grid">
             <label class="check-item"><input type="checkbox" name="interest" value="Care kit assembly & distribution"><span>Care kit drives</span></label>
             <label class="check-item"><input type="checkbox" name="interest" value="Outreach events"><span>Outreach events</span></label>
-            <label class="check-item"><input type="checkbox" name="interest" value="Social media & marketing"><span>Social media & marketing</span></label>
+            <label class="check-item"><input type="checkbox" name="interest" value="Social media & marketing"><span>Social media &amp; marketing</span></label>
             <label class="check-item"><input type="checkbox" name="interest" value="Fundraising support"><span>Fundraising</span></label>
             <label class="check-item"><input type="checkbox" name="interest" value="Administrative support"><span>Administrative support</span></label>
             <label class="check-item"><input type="checkbox" name="interest" value="Photography or videography"><span>Photography / video</span></label>
@@ -414,27 +479,28 @@
           <textarea id="v-message" name="message" placeholder="Tell us about yourself, any relevant experience, or how you heard about us..."></textarea>
         </div>
 
-        <!-- Hidden field to identify which form was submitted -->
         <input type="hidden" name="_subject" value="New Volunteer Interest — HonorBound Heroes">
-
+        <input type="hidden" name="_next" value="https://www.honorboundheroes.com/get-involved.html">
       </div>
 
       <div class="form-footer">
         <p class="form-note">We'll reach out within a few days. No commitment required at this stage — we just want to connect.</p>
         <button type="submit" class="btn-submit">Submit Interest</button>
       </div>
+      <div class="success-msg" id="success-volunteer">
+        ✓ Thank you! We received your submission and will be in touch within a few days.
+      </div>
     </form>
   </div>
 
-  <!-- ── BOARD FORM ── -->
-  <div class="form-panel" id="panel-board">
+  <!-- BOARD -->
+  <div class="form-panel" id="panel-board" role="tabpanel">
     <div class="form-intro">
       <h2>Join the Board of Directors</h2>
-      <p>We're building a founding board of people who are serious about doing real work in real communities. This is a hands-on role — we're looking for quarterly meeting attendance, active committee participation, and genuine investment in the mission.</p>
+      <p>We're building a founding board of people who are serious about doing real work in real communities. This is a hands-on role — quarterly meeting attendance, active committee participation, and genuine investment in the mission.</p>
     </div>
 
-    <form action="https://formspree.io/f/xrevbewk" method="POST">
-
+    <form id="form-board" action="https://formspree.io/f/xrevbewk" method="POST">
       <div class="form-grid">
 
         <div class="form-group">
@@ -463,13 +529,13 @@
         </div>
 
         <div class="form-group full">
-          <span class="check-label">Areas of Expertise <span class="optional" style="text-transform:none; letter-spacing:0; font-size:0.75rem;">(check all that apply)</span></span>
+          <span class="check-label">Areas of Expertise <span style="text-transform:none;letter-spacing:0;font-size:0.72rem;font-weight:400;color:rgba(122,143,168,0.6)">(check all that apply)</span></span>
           <div class="check-grid">
             <label class="check-item"><input type="checkbox" name="expertise" value="Nonprofit governance"><span>Nonprofit governance</span></label>
-            <label class="check-item"><input type="checkbox" name="expertise" value="Legal & compliance"><span>Legal & compliance</span></label>
-            <label class="check-item"><input type="checkbox" name="expertise" value="Finance & accounting"><span>Finance & accounting</span></label>
-            <label class="check-item"><input type="checkbox" name="expertise" value="Fundraising & grants"><span>Fundraising & grants</span></label>
-            <label class="check-item"><input type="checkbox" name="expertise" value="Marketing & communications"><span>Marketing & communications</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Legal & compliance"><span>Legal &amp; compliance</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Finance & accounting"><span>Finance &amp; accounting</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Fundraising & grants"><span>Fundraising &amp; grants</span></label>
+            <label class="check-item"><input type="checkbox" name="expertise" value="Marketing & communications"><span>Marketing &amp; communications</span></label>
             <label class="check-item"><input type="checkbox" name="expertise" value="Veterans services"><span>Veterans services</span></label>
             <label class="check-item"><input type="checkbox" name="expertise" value="Healthcare"><span>Healthcare</span></label>
             <label class="check-item"><input type="checkbox" name="expertise" value="Community organizing"><span>Community organizing</span></label>
@@ -489,29 +555,68 @@
 
         <div class="form-group full">
           <label for="b-commitment">Any questions or constraints we should know about? <span class="optional">(optional)</span></label>
-          <textarea id="b-commitment" name="notes" placeholder="Time availability, conflicts of interest, questions about the role..." style="min-height: 80px;"></textarea>
+          <textarea id="b-commitment" name="notes" placeholder="Time availability, conflicts of interest, questions about the role..." style="min-height:80px"></textarea>
         </div>
 
-        <!-- Hidden field to identify which form was submitted -->
         <input type="hidden" name="_subject" value="New Board Application — HonorBound Heroes">
-
+        <input type="hidden" name="_next" value="https://www.honorboundheroes.com/get-involved.html">
       </div>
 
       <div class="form-footer">
         <p class="form-note">Board applications are reviewed by John McAllister. We'll follow up with a conversation before any commitment is made.</p>
         <button type="submit" class="btn-submit">Submit Application</button>
       </div>
+      <div class="success-msg" id="success-board">
+        ✓ Application received. John McAllister will personally follow up within a week to schedule a conversation.
+      </div>
     </form>
   </div>
 
 </div>
 
+<!-- FOOTER -->
+<div class="flag-bar" aria-hidden="true"></div>
+<footer class="page-footer">
+  <div class="pf-brand">
+    <img src="HBH_LOGO.jpg" alt="HonorBound Heroes" class="pf-brand-logo">
+    <span class="pf-brand-name">HonorBound Heroes</span>
+    <p>Serving homeless veterans with compassion, urgency, and respect. No one who served should face homelessness alone.</p>
+  </div>
+  <div class="pf-col">
+    <h4>Navigate</h4>
+    <a href="index.html#mission">Our Mission</a>
+    <a href="index.html#how">Our Work</a>
+    <a href="index.html#story">Our Story</a>
+    <a href="veteran-housing-resources.html">Housing Resources</a>
+    <a href="get-involved.html">Get Involved</a>
+  </div>
+  <div class="pf-col">
+    <h4>Connect</h4>
+    <a href="https://www.facebook.com/honorbounheroes" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/honorboundheroes/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@honorbound2024" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://givebutter.com/HonorBound" target="_blank" rel="noopener">Donate via GiveButter</a>
+    <a href="https://bonfire.com/honorbound" target="_blank" rel="noopener">Shop &amp; Support</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  © 2024–2026 HonorBound Heroes · 501(c)(3) Nonprofit · EIN 99-1356980 · Remus, MI (Mecosta County) · Donations may be tax-deductible ·
+  <a href="https://www.honorboundheroes.com/terms">Terms</a> · <a href="https://www.honorboundheroes.com/new-page">Privacy</a>
+</div>
+
 <script>
   function switchTab(tab, btn) {
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
     document.querySelectorAll('.form-panel').forEach(p => p.classList.remove('active'));
     btn.classList.add('active');
+    btn.setAttribute('aria-selected','true');
     document.getElementById('panel-' + tab).classList.add('active');
+  }
+
+  // If URL has #board, auto-switch to board tab
+  if (window.location.hash === '#board') {
+    const boardBtn = document.querySelectorAll('.tab-btn')[1];
+    switchTab('board', boardBtn);
   }
 </script>
 
