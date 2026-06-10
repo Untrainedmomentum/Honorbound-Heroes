@@ -46,7 +46,7 @@ a { color: inherit; text-decoration: none; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Barlow', sans-serif; background: var(--navy); color: var(--off-white); line-height: 1.6; font-size: 16px; overflow-x: hidden; }
 
-/* ══ NAV ══ */
+/* NAV */
 nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; display: flex; align-items: center; justify-content: space-between; padding: 0 3rem; height: 68px; background: rgba(11,31,58,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.08); gap: 2rem; }
 .nav-logo-wrap { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; flex-shrink: 0; }
 .nav-logo-text { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #fff; display: block; line-height: 1.2; letter-spacing: -0.01em; }
@@ -85,7 +85,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; display: flex; 
 .flag-bar { height: 4px; background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, #fff 33%, #fff 66%, #0A3577 66%, #0A3577 100%); margin-top: 68px; }
 @media (max-width: 768px) { nav { padding: 0 1.2rem; } .nav-links { display: none; } .nav-hamburger { display: flex; } }
 
-/* ══ PAGE HERO ══ */
+/* PAGE HERO */
 .page-hero { background: var(--navy-mid); border-bottom: 3px solid var(--red); padding: 3.5rem 3rem 3rem; position: relative; overflow: hidden; }
 .page-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(178,34,52,0.05) 0%, transparent 70%); pointer-events: none; }
 .page-hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 3rem; position: relative; z-index: 1; }
@@ -99,7 +99,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; display: flex; 
 .page-hero-sub { font-size: 1rem; font-weight: 300; color: #90a8bf; max-width: 520px; line-height: 1.8; }
 .hero-logo { width: 200px; height: 200px; object-fit: contain; opacity: 0.9; filter: drop-shadow(0 8px 30px rgba(0,0,0,0.5)); flex-shrink: 0; }
 
-/* ══ MAIN ══ */
+/* MAIN */
 main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
 
 /* Story grid */
@@ -127,7 +127,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
 
 /* How we help */
 .how-header { margin-bottom: 2rem; }
-.tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
+.tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 3rem; }
 .tier-card { background: var(--navy-mid); border-radius: 4px; padding: 2rem; border: 1px solid rgba(255,255,255,0.07); position: relative; overflow: hidden; }
 .tier-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
 .tier-card.now::before { background: var(--red); }
@@ -285,7 +285,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
 
       <div class="status-box">
         <p class="s-label">501(c)(3) Status</p>
-        <p>HonorBound Heroes is a registered nonprofit. EIN: 99-1356980. Donations may be tax-deductible. See our our IRS determination letter, available upon request at <a href="mailto:honorboundheroes@outlook.com">honorboundheroes@outlook.com</a>.</p>
+        <p>HonorBound Heroes is a registered nonprofit. EIN: 99-1356980. Donations may be tax-deductible. See our IRS determination letter, available upon request at <a href="mailto:honorboundheroes@outlook.com">honorboundheroes@outlook.com</a>.</p>
       </div>
     </div>
   </div>
@@ -322,6 +322,17 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
       </ul>
     </div>
 
+    <div class="tier-card soon">
+      <div class="tier-tag">Building Community</div>
+      <h3>Veterans Supporting Veterans</h3>
+      <p>We're building more than a nonprofit — we're building a movement. Starting online and growing into real-world connection, veteran to veteran.</p>
+      <ul>
+        <li>Online community for veterans and supporters</li>
+        <li>In-person networking and events</li>
+        <li>Veterans lifting veterans — no one left behind</li>
+      </ul>
+    </div>
+
     <div class="tier-card north">
       <div class="tier-tag">The North Star</div>
       <h3>A Home for Every Veteran</h3>
@@ -353,29 +364,29 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
     </div>
 
     <div class="board-card">
-      <div class="board-initials">DM</div>
+      <img src="Jen.png" alt="Jennifer BrynelsenFovozzo" class="board-photo">
       <div class="board-card-body">
-        <h4>Dusty McAllister</h4>
+        <h4>Jennifer BrynelsenFovozzo</h4>
         <div class="board-role">Vice President</div>
-        <p>Vice President of the Board and a key pillar of HonorBound Heroes' leadership. Dusty brings dedication to the mission and serves as the President's primary backup and successor.</p>
+        <p>IT professional and technology advisor to HonorBound Heroes. Jennifer brings technical expertise and operational discipline to the board's leadership responsibilities.</p>
       </div>
     </div>
 
     <div class="board-card">
-      <div class="board-initials">JB</div>
+      <img src="Devo.png" alt="Davontae Cherry Stevens" class="board-photo">
       <div class="board-card-body">
-        <h4>Jennifer Bryneelsenfovozzo</h4>
-        <div class="board-role">Treasurer</div>
-        <p>IT professional and technology advisor to HonorBound Heroes. Jennifer brings technical expertise and operational discipline to the board's financial oversight responsibilities.</p>
+        <h4>Davontae Cherry Stevens</h4>
+        <div class="board-role">Secretary</div>
+        <p>A letter carrier for over ten years and a rising social media influencer, Davontae has built his life around showing up for people — on the streets he serves and the communities he builds online. A Chicago native and dedicated father, he brings reach, relatability, and real commitment to HonorBound Heroes.</p>
       </div>
     </div>
 
     <div class="board-card">
-      <div class="board-initials">MS</div>
+      <img src="Mike.png" alt="Mike Smith" class="board-photo">
       <div class="board-card-body">
         <h4>Mike Smith</h4>
-        <div class="board-role">Secretary · U.S. Marine Corps</div>
-        <p>United States Marine Corps veteran and Secretary of the Board. Mike brings firsthand military experience and a veteran's perspective to HonorBound Heroes' mission and governance.</p>
+        <div class="board-role">Treasurer · U.S. Marine Corps</div>
+        <p>A U.S. Marine Corps veteran and former probation officer, Mike has seen struggle from every angle — and chosen to fight back. He brings hard-won perspective on the systems that fail veterans and the resilience it takes to rebuild.</p>
       </div>
     </div>
   </div>
@@ -411,7 +422,6 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
     <h4>Legal</h4>
     <a href="privacy-policy.html">Privacy Policy</a>
     <a href="terms.html">Terms of Use</a>
-    <a href="legal.html">Legal &amp; Disclosures</a>
     <a href="legal.html">Legal &amp; Disclosures</a>
   </div>
 </footer>
