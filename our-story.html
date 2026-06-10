@@ -173,10 +173,10 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
 }
 
 /* Board grid */
-.board-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+.board-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
 .board-card { background: var(--navy-mid); border: 1px solid var(--border-subtle); border-top: 3px solid var(--red); border-radius: 4px; overflow: hidden; text-align: center; }
-.board-photo { width: 100%; height: 200px; object-fit: cover; object-position: center top; display: block; }
-.board-initials { width: 100%; height: 140px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--red); background: rgba(178,34,52,0.08); }
+.board-photo { width: 100%; height: 320px; object-fit: cover; object-position: center top; display: block; }
+.board-initials { width: 100%; height: 320px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--red); background: rgba(178,34,52,0.08); }
 .board-card-body { padding: 1.25rem 1.5rem 1.5rem; }
 .board-card h4 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
 .board-role { font-size: 0.72rem; color: var(--red); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
@@ -382,7 +382,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
     </div>
 
     <div class="board-card">
-      <img src="Mike.png" alt="Mike Smith" class="board-photo">
+      <img src="Mike.png" alt="Mike Smith" class="board-photo" style="object-position: center 20%;">
       <div class="board-card-body">
         <h4>Mike Smith</h4>
         <div class="board-role">Treasurer · U.S. Marine Corps</div>
