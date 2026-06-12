@@ -173,15 +173,15 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
 }
 
 /* Board grid */
-.board-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
+.board-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
 .board-card { background: var(--navy-mid); border: 1px solid var(--border-subtle); border-top: 3px solid var(--red); border-radius: 4px; overflow: hidden; text-align: center; }
-.board-photo { width: 100%; height: 320px; object-fit: cover; object-position: center top; display: block; }
-.board-initials { width: 100%; height: 320px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--red); background: rgba(178,34,52,0.08); }
+.board-photo { width: 100%; height: 280px; object-fit: cover; object-position: center top; display: block; }
+.board-initials { width: 100%; height: 280px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--red); background: rgba(178,34,52,0.08); }
 .board-card-body { padding: 1.25rem 1.5rem 1.5rem; }
 .board-card h4 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
 .board-role { font-size: 0.72rem; color: var(--red); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
 .board-card p { font-size: 0.84rem; color: #8a9bb5; line-height: 1.65; }
-@media (max-width: 768px) { .board-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 900px) { .board-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .board-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
@@ -285,7 +285,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
 
       <div class="status-box">
         <p class="s-label">501(c)(3) Status</p>
-        <p>HonorBound Heroes is a registered nonprofit. EIN: 99-1356980. Donations may be tax-deductible. See our IRS determination letter, available upon request at <a href="mailto:honorboundheroes@outlook.com">honorboundheroes@outlook.com</a>.</p>
+        <p>HonorBound Heroes is a registered nonprofit. EIN: 99-1356980. Donations may be tax-deductible. See our IRS determination letter, available upon request at <a href="mailto:info@honorboundheroes.org">info@honorboundheroes.org</a>.</p>
       </div>
     </div>
   </div>
@@ -386,14 +386,32 @@ main { max-width: 1100px; margin: 0 auto; padding: 4rem 3rem 5rem; }
       <div class="board-card-body">
         <h4>Mike Smith</h4>
         <div class="board-role">Treasurer · U.S. Marine Corps</div>
-        <p>A U.S. Marine Corps veteran and former probation officer, Mike has seen struggle from every angle — and chosen to fight back. He brings hard-won perspective on the systems that fail veterans and the resilience it takes to rebuild.</p>
+        <p>A U.S. Marine Corps veteran, Mike has seen struggle from every angle — and chosen to fight back. He brings hard-won perspective on the systems that fail veterans and the resilience it takes to rebuild.</p>
       </div>
     </div>
+
+    <div class="board-card">
+      <img src="Nate.png" alt="Dylan Stunns" class="board-photo">
+      <div class="board-card-body">
+        <h4>Dylan Stunns</h4>
+        <div class="board-role">Volunteer</div>
+        <p>A Minnesota native, Dylan began his career as a probation officer before making a deliberate shift toward fundraising. He brings street-level people skills, a knack for building relationships, and the drive to help HonorBound Heroes grow the support it needs to do more.</p>
+      </div>
+    </div>
+
+    <div class="board-card" style="display:flex;flex-direction:column;justify-content:center;align-items:center;padding:2.5rem 1.75rem;text-align:center;border-top-color:rgba(178,34,52,0.35);background:rgba(178,34,52,0.04);">
+      <div style="width:64px;height:64px;border-radius:50%;border:2px dashed rgba(178,34,52,0.5);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </div>
+      <h4 style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#fff;margin-bottom:4px;">Join Our Board</h4>
+      <div class="board-role">We're Recruiting</div>
+      <p style="font-size:0.84rem;color:#8a9bb5;line-height:1.65;margin-bottom:1.25rem;">We're actively looking for members with backgrounds in nonprofit governance, legal, finance, healthcare, and community organizing.</p>
+      <a href="get-involved.html" style="font-size:0.8rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:var(--red);">Apply Here →</a>
+    </div>
+
   </div>
 
-  <div style="margin-top:2rem;padding:1.25rem 1.5rem;background:rgba(178,34,52,0.06);border-left:3px solid var(--red);border-radius:0 3px 3px 0;">
-    <p style="font-size:0.88rem;color:#8a9bb5;line-height:1.65">Interested in joining our board? We are actively recruiting additional members with backgrounds in nonprofit governance, legal, finance, healthcare, and community organizing. <a href="get-involved.html" style="color:var(--red)">Apply here →</a></p>
-  </div>
+
 
   <div class="cta-row">
     <a href="veteran-housing-resources.html" class="btn-primary">Housing Resources</a>
